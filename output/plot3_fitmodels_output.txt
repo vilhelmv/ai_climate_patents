@@ -1,0 +1,2181 @@
+[1] "Y02A"
+Fitting model for Y02A 
+[1] "Y02B"
+Fitting model for Y02B 
+[1] "Y02D"
+Fitting model for Y02D 
+[1] "Y02E"
+Fitting model for Y02E 
+[1] "Y02P"
+Fitting model for Y02P 
+[1] "Y02T"
+Fitting model for Y02T 
+[1] "transport"
+Fitting model for transport 
+[1] "buildings"
+Fitting model for buildings 
+[1] "smartgrids"
+Fitting model for smartgrids 
+[1] "electricity"
+Fitting model for electricity 
+smartgrids : before removing NAs 5955 51 
+smartgrids : after removing NAs 5955 51 
+smartgrids 5955 57 
+Y02A : before removing NAs 15723 52 
+Y02A : after removing NAs 15723 52 
+Y02D : before removing NAs 23922 48 
+Y02D : after removing NAs 23922 48 
+Y02B : before removing NAs 20387 53 
+Y02B : after removing NAs 20387 53 
+Y02A 15723 58 
+buildings : before removing NAs 34288 58 
+Y02D 23922 54 
+buildings : after removing NAs 34288 58 
+Y02B 20387 59 
+Y02P : before removing NAs 35582 54 
+Y02T : before removing NAs 41834 51 
+Y02T : after removing NAs 41832 51 
+Y02P : after removing NAs 35580 54 
+Y02T 41832 57 
+Y02E : before removing NAs 66106 53 
+Y02P 35580 60 
+buildings 34288 64 
+Y02E : after removing NAs 66103 53 
+GAMLSS-RS iteration 1: Global Deviance = 22008.33 
+Y02E 66103 59 
+GAMLSS-RS iteration 2: Global Deviance = 21773.41 
+transport : before removing NAs 118143 89 
+transport : after removing NAs 118142 89 
+GAMLSS-RS iteration 3: Global Deviance = 21621.14 
+GAMLSS-RS iteration 1: Global Deviance = 48039.53 
+GAMLSS-RS iteration 4: Global Deviance = 21532.72 
+transport 75000 95 
+GAMLSS-RS iteration 1: Global Deviance = 77178.74 
+GAMLSS-RS iteration 5: Global Deviance = 21497.12 
+GAMLSS-RS iteration 1: Global Deviance = 88170.17 
+GAMLSS-RS iteration 1: Global Deviance = 67811.68 
+GAMLSS-RS iteration 2: Global Deviance = 47510.87 
+GAMLSS-RS iteration 6: Global Deviance = 21480.92 
+GAMLSS-RS iteration 2: Global Deviance = 76528.05 
+GAMLSS-RS iteration 7: Global Deviance = 21469.97 
+GAMLSS-RS iteration 1: Global Deviance = 107397.5 
+GAMLSS-RS iteration 3: Global Deviance = 47240.67 
+GAMLSS-RS iteration 8: Global Deviance = 21461.13 
+GAMLSS-RS iteration 4: Global Deviance = 47119.39 
+GAMLSS-RS iteration 9: Global Deviance = 21453.58 
+GAMLSS-RS iteration 2: Global Deviance = 67254 
+GAMLSS-RS iteration 2: Global Deviance = 87554.84 
+GAMLSS-RS iteration 3: Global Deviance = 76234.32 
+GAMLSS-RS iteration 5: Global Deviance = 47078.1 
+GAMLSS-RS iteration 1: Global Deviance = 163951.9 
+GAMLSS-RS iteration 3: Global Deviance = 67090.96 
+GAMLSS-RS iteration 10: Global Deviance = 21445.78 
+DONE fit smartgrids 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.711212   0.268614  -2.648  0.00813 ** 
+Y04S.101                    -0.118350   0.046994  -2.518  0.01181 *  
+Y04S.201                     0.000782   0.049798   0.016  0.98747    
+Y04S.301                     1.015437   0.059233  17.143  < 2e-16 ***
+Y04S.401                     0.241018   0.049820   4.838 1.35e-06 ***
+Y04S.501                     0.529436   0.070408   7.520 6.32e-14 ***
+tct_type5-10                -0.266977   0.244116  -1.094  0.27415    
+tct_type10-15               -0.245766   0.295155  -0.833  0.40507    
+tct_type>15                 -0.091481   0.386122  -0.237  0.81272    
+grantyear2011                0.627053   0.297010   2.111  0.03480 *  
+grantyear2012                0.638810   0.266506   2.397  0.01656 *  
+grantyear2013                0.345962   0.254684   1.358  0.17439    
+grantyear2014               -0.652831   0.250852  -2.602  0.00928 ** 
+grantyear2015               -0.619016   0.256592  -2.412  0.01588 *  
+grantyear2016               -0.364800   0.249686  -1.461  0.14406    
+grantyear2017               -1.255181   0.252802  -4.965 7.06e-07 ***
+aiai                         0.486934   0.089209   5.458 5.00e-08 ***
+organizational1             -0.177274   0.058425  -3.034  0.00242 ** 
+claims_log                   0.363538   0.040679   8.937  < 2e-16 ***
+individual_inventors_log    -0.061089   0.033300  -1.835  0.06662 .  
+patent_citations_log         0.314746   0.017691  17.792  < 2e-16 ***
+research_citations_log      -0.002864   0.025854  -0.111  0.91180    
+other_citations_log          0.251421   0.022692  11.080  < 2e-16 ***
+tct_type5-10:grantyear2011  -0.277234   0.323988  -0.856  0.39220    
+tct_type10-15:grantyear2011  0.139967   0.379780   0.369  0.71248    
+tct_type>15:grantyear2011    0.818085   0.547694   1.494  0.13531    
+tct_type5-10:grantyear2012  -0.247557   0.297371  -0.832  0.40517    
+tct_type10-15:grantyear2012 -0.454662   0.344194  -1.321  0.18657    
+tct_type>15:grantyear2012   -0.147465   0.459354  -0.321  0.74820    
+tct_type5-10:grantyear2013  -0.034822   0.281842  -0.124  0.90167    
+tct_type10-15:grantyear2013 -0.438286   0.328635  -1.334  0.18237    
+tct_type>15:grantyear2013    0.385274   0.448955   0.858  0.39084    
+tct_type5-10:grantyear2014   0.634175   0.282309   2.246  0.02472 *  
+tct_type10-15:grantyear2014  0.401111   0.326868   1.227  0.21982    
+tct_type>15:grantyear2014    0.215383   0.421750   0.511  0.60959    
+tct_type5-10:grantyear2015   0.407415   0.286398   1.423  0.15492    
+tct_type10-15:grantyear2015  0.168045   0.330432   0.509  0.61108    
+tct_type>15:grantyear2015   -0.348305   0.425989  -0.818  0.41360    
+tct_type5-10:grantyear2016  -0.200358   0.282202  -0.710  0.47774    
+tct_type10-15:grantyear2016 -0.105874   0.326572  -0.324  0.74580    
+tct_type>15:grantyear2016   -0.734425   0.420664  -1.746  0.08089 .  
+tct_type5-10:grantyear2017   0.746052   0.282186   2.644  0.00822 ** 
+tct_type10-15:grantyear2017  0.271483   0.330198   0.822  0.41101    
+tct_type>15:grantyear2017   -0.577607   0.418094  -1.382  0.16717    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  4.14220    1.03548   4.000 6.40e-05 ***
+Y04S.101                    -1.14917    0.17962  -6.398 1.70e-10 ***
+Y04S.201                    -0.63940    0.16507  -3.873 0.000108 ***
+Y04S.301                     1.18643    0.27621   4.295 1.77e-05 ***
+Y04S.401                    -0.08517    0.16125  -0.528 0.597410    
+Y04S.501                     1.46087    0.27976   5.222 1.83e-07 ***
+tct_type5-10                -0.72616    1.25881  -0.577 0.564053    
+tct_type10-15               -1.03533    1.09077  -0.949 0.342569    
+tct_type>15                 -2.25049    1.09151  -2.062 0.039269 *  
+grantyear2011               -1.04767    0.97960  -1.069 0.284895    
+grantyear2012               -0.75384    1.00452  -0.750 0.453016    
+grantyear2013                2.28428    1.66150   1.375 0.169236    
+grantyear2014               -2.05189    0.97979  -2.094 0.036283 *  
+grantyear2015               -0.65478    0.95184  -0.688 0.491536    
+grantyear2016               -1.10985    0.92858  -1.195 0.232052    
+grantyear2017               -2.14157    0.95177  -2.250 0.024479 *  
+organizational1             -1.36830    0.28252  -4.843 1.31e-06 ***
+claims_log                   0.27123    0.14274   1.900 0.057466 .  
+individual_inventors_log     0.26305    0.13048   2.016 0.043842 *  
+patent_citations_log        -0.27315    0.07016  -3.893 1.00e-04 ***
+research_citations_log       0.18671    0.07510   2.486 0.012935 *  
+other_citations_log         -0.21031    0.07336  -2.867 0.004159 ** 
+tct_type5-10:grantyear2011   3.99573    1.73086   2.309 0.021004 *  
+tct_type10-15:grantyear2011  2.50726    1.22608   2.045 0.040905 *  
+tct_type>15:grantyear2011    5.67495    1.42456   3.984 6.87e-05 ***
+tct_type5-10:grantyear2012   0.14040    1.35067   0.104 0.917213    
+tct_type10-15:grantyear2012  1.83309    1.29453   1.416 0.156822    
+tct_type>15:grantyear2012    3.68414    1.56215   2.358 0.018388 *  
+tct_type5-10:grantyear2013  -2.56832    1.89572  -1.355 0.175533    
+tct_type10-15:grantyear2013 -0.04042    2.13968  -0.019 0.984930    
+tct_type>15:grantyear2013    3.71391    2.10958   1.760 0.078375 .  
+tct_type5-10:grantyear2014   2.13431    1.35264   1.578 0.114645    
+tct_type10-15:grantyear2014  4.72688    1.28890   3.667 0.000247 ***
+tct_type>15:grantyear2014   11.70338    2.89615   4.041 5.39e-05 ***
+tct_type5-10:grantyear2015   0.99742    1.31688   0.757 0.448836    
+tct_type10-15:grantyear2015  0.86564    1.17030   0.740 0.459526    
+tct_type>15:grantyear2015    4.87930    1.46660   3.327 0.000883 ***
+tct_type5-10:grantyear2016   1.60508    1.30263   1.232 0.217929    
+tct_type10-15:grantyear2016  2.83667    1.20226   2.359 0.018334 *  
+tct_type>15:grantyear2016    4.10440    1.27842   3.211 0.001332 ** 
+tct_type5-10:grantyear2017   3.31246    1.31153   2.526 0.011574 *  
+tct_type10-15:grantyear2017  4.42401    1.19701   3.696 0.000221 ***
+tct_type>15:grantyear2017    4.00153    1.23335   3.244 0.001183 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.973185   0.176513  -5.513 3.67e-08 ***
+Y04S.101                     0.007334   0.042946   0.171  0.86440    
+Y04S.201                     0.020792   0.040577   0.512  0.60839    
+Y04S.301                    -0.215027   0.046620  -4.612 4.07e-06 ***
+Y04S.401                     0.114465   0.040065   2.857  0.00429 ** 
+Y04S.501                    -0.042115   0.045039  -0.935  0.34979    
+tct_type5-10                -0.669133   0.207453  -3.225  0.00126 ** 
+tct_type10-15               -0.119088   0.340777  -0.349  0.72675    
+tct_type>15                  0.556733   0.987744   0.564  0.57302    
+grantyear2011                0.398746   0.201367   1.980  0.04773 *  
+grantyear2012                0.138385   0.174132   0.795  0.42681    
+grantyear2013               -0.101019   0.151701  -0.666  0.50550    
+grantyear2014                0.024931   0.234790   0.106  0.91544    
+grantyear2015                0.220767   0.166558   1.325  0.18507    
+grantyear2016                0.238548   0.167549   1.424  0.15457    
+grantyear2017                0.357933   0.279462   1.281  0.20032    
+organizational1              0.117475   0.038211   3.074  0.00212 ** 
+claims_log                  -0.064565   0.032922  -1.961  0.04991 *  
+individual_inventors_log    -0.264755   0.028630  -9.248  < 2e-16 ***
+patent_citations_log         0.081538   0.014386   5.668 1.52e-08 ***
+research_citations_log      -0.089311   0.018149  -4.921 8.85e-07 ***
+other_citations_log          0.158732   0.017172   9.244  < 2e-16 ***
+tct_type5-10:grantyear2011  -0.124890   0.265615  -0.470  0.63824    
+tct_type10-15:grantyear2011 -0.223295   0.382388  -0.584  0.55928    
+tct_type>15:grantyear2011   -0.608028   1.003226  -0.606  0.54449    
+tct_type5-10:grantyear2012   0.676385   0.256174   2.640  0.00830 ** 
+tct_type10-15:grantyear2012 -0.356699   0.377437  -0.945  0.34467    
+tct_type>15:grantyear2012   -0.782300   1.000825  -0.782  0.43445    
+tct_type5-10:grantyear2013   0.761574   0.241374   3.155  0.00161 ** 
+tct_type10-15:grantyear2013 -0.194515   0.358913  -0.542  0.58787    
+tct_type>15:grantyear2013   -0.302602   0.991943  -0.305  0.76033    
+tct_type5-10:grantyear2014   0.704827   0.293479   2.402  0.01635 *  
+tct_type10-15:grantyear2014 -0.076098   0.394716  -0.193  0.84713    
+tct_type>15:grantyear2014   -1.129597   1.011038  -1.117  0.26393    
+tct_type5-10:grantyear2015   0.524048   0.237147   2.210  0.02716 *  
+tct_type10-15:grantyear2015 -0.095343   0.368718  -0.259  0.79597    
+tct_type>15:grantyear2015   -1.129814   0.999319  -1.131  0.25828    
+tct_type5-10:grantyear2016   0.411976   0.246452   1.672  0.09465 .  
+tct_type10-15:grantyear2016 -0.271252   0.363048  -0.747  0.45500    
+tct_type>15:grantyear2016   -0.901734   0.997973  -0.904  0.36626    
+tct_type5-10:grantyear2017   0.377250   0.325708   1.158  0.24681    
+tct_type10-15:grantyear2017 -0.365074   0.424967  -0.859  0.39034    
+tct_type>15:grantyear2017    0.419187   1.022261   0.410  0.68178    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  5955 
+Degrees of Freedom for the fit:  130
+      Residual Deg. of Freedom:  5825 
+                      at cycle:  10 
+ 
+Global Deviance:     21445.78 
+            AIC:     21705.78 
+            SBC:     22575.74 
+******************************************************************
+DONE summary smartgrids 
+GAMLSS-RS iteration 6: Global Deviance = 47063.89 
+GAMLSS-RS iteration 4: Global Deviance = 76091.05 
+GAMLSS-RS iteration 1: Global Deviance = 125381.8 
+GAMLSS-RS iteration 2: Global Deviance = 106451.8 
+GAMLSS-RS iteration 3: Global Deviance = 87422.14 
+GAMLSS-RS iteration 7: Global Deviance = 47059.05 
+GAMLSS-RS iteration 4: Global Deviance = 67060.37 
+electricity : before removing NAs 826019 95 
+electricity : after removing NAs 826003 95 
+GAMLSS-RS iteration 8: Global Deviance = 47057.21 
+GAMLSS-RS iteration 5: Global Deviance = 76032.99 
+GAMLSS-RS iteration 5: Global Deviance = 67053.56 
+GAMLSS-RS iteration 9: Global Deviance = 47056.28 
+GAMLSS-RS iteration 4: Global Deviance = 87399.48 
+GAMLSS-RS iteration 6: Global Deviance = 76010.56 
+GAMLSS-RS iteration 10: Global Deviance = 47055.75 
+DONE fit Y02A 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.871168   0.234946  -3.708  0.00021 ***
+Y02A.101                    -0.468559   0.194263  -2.412  0.01588 *  
+Y02A.201                    -0.355018   0.174118  -2.039  0.04147 *  
+Y02A.301                     0.002138   0.170779   0.013  0.99001    
+Y02A.401                    -0.277980   0.167839  -1.656  0.09770 .  
+Y02A.501                    -0.104767   0.168025  -0.624  0.53295    
+Y02A.901                     0.132906   0.168701   0.788  0.43081    
+tct_type5-10                -0.261606   0.165423  -1.581  0.11380    
+tct_type10-15               -0.413117   0.172045  -2.401  0.01635 *  
+tct_type>15                 -0.803662   0.174638  -4.602 4.22e-06 ***
+grantyear2011               -0.293156   0.192287  -1.525  0.12739    
+grantyear2012               -0.164669   0.203827  -0.808  0.41917    
+grantyear2013               -0.449333   0.192250  -2.337  0.01944 *  
+grantyear2014               -0.062981   0.186813  -0.337  0.73602    
+grantyear2015               -0.303002   0.175231  -1.729  0.08380 .  
+grantyear2016                0.078056   0.200796   0.389  0.69748    
+grantyear2017               -0.520476   0.186332  -2.793  0.00522 ** 
+aiai                         0.376243   0.079702   4.721 2.37e-06 ***
+organizational1             -0.003866   0.043123  -0.090  0.92857    
+claims_log                   0.312201   0.023002  13.573  < 2e-16 ***
+individual_inventors_log     0.042689   0.022734   1.878  0.06043 .  
+patent_citations_log         0.350236   0.013193  26.548  < 2e-16 ***
+research_citations_log      -0.002530   0.012327  -0.205  0.83738    
+other_citations_log          0.125861   0.017064   7.376 1.72e-13 ***
+tct_type5-10:grantyear2011   0.275614   0.227003   1.214  0.22471    
+tct_type10-15:grantyear2011  0.229059   0.226409   1.012  0.31169    
+tct_type>15:grantyear2011    0.431924   0.234586   1.841  0.06561 .  
+tct_type5-10:grantyear2012   0.078329   0.228846   0.342  0.73215    
+tct_type10-15:grantyear2012  0.128690   0.231401   0.556  0.57813    
+tct_type>15:grantyear2012    0.167454   0.233653   0.717  0.47358    
+tct_type5-10:grantyear2013   0.451213   0.223303   2.021  0.04334 *  
+tct_type10-15:grantyear2013  0.366832   0.220141   1.666  0.09566 .  
+tct_type>15:grantyear2013    0.358543   0.226171   1.585  0.11293    
+tct_type5-10:grantyear2014   0.061193   0.220337   0.278  0.78123    
+tct_type10-15:grantyear2014  0.049962   0.215565   0.232  0.81672    
+tct_type>15:grantyear2014    0.035929   0.217814   0.165  0.86898    
+tct_type5-10:grantyear2015   0.545046   0.217787   2.503  0.01234 *  
+tct_type10-15:grantyear2015  0.320047   0.207259   1.544  0.12256    
+tct_type>15:grantyear2015    0.185543   0.209129   0.887  0.37497    
+tct_type5-10:grantyear2016   0.037770   0.236982   0.159  0.87337    
+tct_type10-15:grantyear2016 -0.085180   0.227394  -0.375  0.70797    
+tct_type>15:grantyear2016   -0.181278   0.228609  -0.793  0.42781    
+tct_type5-10:grantyear2017  -0.093407   0.218692  -0.427  0.66930    
+tct_type10-15:grantyear2017  0.031923   0.220567   0.145  0.88493    
+tct_type>15:grantyear2017   -0.120070   0.219522  -0.547  0.58441    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  0.005332   0.646545   0.008 0.993420    
+Y02A.101                     0.305412   0.553164   0.552 0.580875    
+Y02A.201                     0.465402   0.517920   0.899 0.368881    
+Y02A.301                     0.410487   0.513072   0.800 0.423690    
+Y02A.401                     2.620795   0.540053   4.853 1.23e-06 ***
+Y02A.501                     0.802223   0.504614   1.590 0.111906    
+Y02A.901                     1.166794   0.505472   2.308 0.020994 *  
+tct_type5-10                 0.451236   0.415042   1.087 0.276963    
+tct_type10-15                1.373341   0.406771   3.376 0.000737 ***
+tct_type>15                  0.607699   0.427666   1.421 0.155346    
+grantyear2011               -0.583944   0.524097  -1.114 0.265215    
+grantyear2012                0.684383   0.551652   1.241 0.214770    
+grantyear2013                0.156125   0.470345   0.332 0.739941    
+grantyear2014                1.014110   0.524106   1.935 0.053017 .  
+grantyear2015                0.476852   0.460963   1.034 0.300933    
+grantyear2016                1.550513   0.453358   3.420 0.000628 ***
+grantyear2017                0.920169   0.450758   2.041 0.041230 *  
+organizational1             -0.177828   0.114119  -1.558 0.119190    
+claims_log                  -0.001830   0.056533  -0.032 0.974172    
+individual_inventors_log     0.078773   0.053177   1.481 0.138537    
+patent_citations_log        -0.163774   0.030029  -5.454 5.01e-08 ***
+research_citations_log       0.118293   0.029080   4.068 4.77e-05 ***
+other_citations_log         -0.011725   0.038401  -0.305 0.760110    
+tct_type5-10:grantyear2011   1.018412   0.601248   1.694 0.090317 .  
+tct_type10-15:grantyear2011  0.093368   0.589431   0.158 0.874141    
+tct_type>15:grantyear2011    0.882742   0.616501   1.432 0.152204    
+tct_type5-10:grantyear2012  -1.069116   0.618058  -1.730 0.083686 .  
+tct_type10-15:grantyear2012 -1.456350   0.604386  -2.410 0.015980 *  
+tct_type>15:grantyear2012   -1.032010   0.644323  -1.602 0.109243    
+tct_type5-10:grantyear2013   0.046738   0.545963   0.086 0.931780    
+tct_type10-15:grantyear2013 -0.673474   0.530541  -1.269 0.204314    
+tct_type>15:grantyear2013   -0.103490   0.556531  -0.186 0.852482    
+tct_type5-10:grantyear2014  -0.474665   0.596879  -0.795 0.426483    
+tct_type10-15:grantyear2014 -0.924853   0.579196  -1.597 0.110333    
+tct_type>15:grantyear2014   -0.319418   0.599139  -0.533 0.593952    
+tct_type5-10:grantyear2015   0.799175   0.559800   1.428 0.153425    
+tct_type10-15:grantyear2015 -0.607739   0.527409  -1.152 0.249212    
+tct_type>15:grantyear2015    0.255549   0.548811   0.466 0.641480    
+tct_type5-10:grantyear2016  -0.528871   0.552341  -0.958 0.338326    
+tct_type10-15:grantyear2016 -1.999602   0.515765  -3.877 0.000106 ***
+tct_type>15:grantyear2016   -1.156838   0.530561  -2.180 0.029242 *  
+tct_type5-10:grantyear2017  -0.596949   0.547401  -1.091 0.275503    
+tct_type10-15:grantyear2017 -0.605568   0.519138  -1.166 0.243436    
+tct_type>15:grantyear2017    0.023703   0.539167   0.044 0.964936    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -1.530865   0.472664  -3.239 0.001203 ** 
+Y02A.101                     0.032529   0.451267   0.072 0.942537    
+Y02A.201                     0.005404   0.256934   0.021 0.983221    
+Y02A.301                     0.137024   0.216314   0.633 0.526449    
+Y02A.401                    -0.681002   0.194080  -3.509 0.000451 ***
+Y02A.501                    -0.075659   0.191462  -0.395 0.692727    
+Y02A.901                    -0.553168   0.192071  -2.880 0.003982 ** 
+tct_type5-10                -0.199822   0.449420  -0.445 0.656600    
+tct_type10-15                0.026084   0.424529   0.061 0.951008    
+tct_type>15                  0.293988   0.460547   0.638 0.523259    
+grantyear2011                0.967720   0.688933   1.405 0.160141    
+grantyear2012               -0.040882   0.485733  -0.084 0.932926    
+grantyear2013                0.619404   0.545187   1.136 0.255919    
+grantyear2014                1.147294   0.434575   2.640 0.008298 ** 
+grantyear2015               -0.264727   0.481218  -0.550 0.582246    
+grantyear2016                0.160580   0.434550   0.370 0.711736    
+grantyear2017                0.171891   0.454337   0.378 0.705189    
+organizational1              0.226525   0.071526   3.167 0.001543 ** 
+claims_log                   0.114339   0.035203   3.248 0.001165 ** 
+individual_inventors_log    -0.014547   0.031145  -0.467 0.640459    
+patent_citations_log        -0.009819   0.017822  -0.551 0.581670    
+research_citations_log       0.171701   0.017240   9.960  < 2e-16 ***
+other_citations_log          0.070999   0.023282   3.050 0.002296 ** 
+tct_type5-10:grantyear2011  -0.322625   0.724349  -0.445 0.656037    
+tct_type10-15:grantyear2011 -0.827507   0.707323  -1.170 0.242053    
+tct_type>15:grantyear2011   -0.994096   0.743959  -1.336 0.181495    
+tct_type5-10:grantyear2012   0.376906   0.566861   0.665 0.506124    
+tct_type10-15:grantyear2012  0.084146   0.512241   0.164 0.869521    
+tct_type>15:grantyear2012   -0.571033   0.587963  -0.971 0.331461    
+tct_type5-10:grantyear2013  -0.118632   0.593566  -0.200 0.841590    
+tct_type10-15:grantyear2013 -0.581822   0.562747  -1.034 0.301201    
+tct_type>15:grantyear2013   -0.777050   0.607719  -1.279 0.201045    
+tct_type5-10:grantyear2014  -0.751695   0.486894  -1.544 0.122643    
+tct_type10-15:grantyear2014 -0.944803   0.450710  -2.096 0.036076 *  
+tct_type>15:grantyear2014   -1.307037   0.487514  -2.681 0.007347 ** 
+tct_type5-10:grantyear2015   0.864021   0.521606   1.656 0.097648 .  
+tct_type10-15:grantyear2015  0.692527   0.498825   1.388 0.165060    
+tct_type>15:grantyear2015    0.007592   0.532808   0.014 0.988632    
+tct_type5-10:grantyear2016   0.329947   0.480270   0.687 0.492091    
+tct_type10-15:grantyear2016  0.060136   0.452558   0.133 0.894290    
+tct_type>15:grantyear2016   -0.274590   0.492511  -0.558 0.577174    
+tct_type5-10:grantyear2017  -0.175322   0.507278  -0.346 0.729638    
+tct_type10-15:grantyear2017 -0.190314   0.472791  -0.403 0.687297    
+tct_type>15:grantyear2017   -0.398724   0.507470  -0.786 0.432050    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  15723 
+Degrees of Freedom for the fit:  133
+      Residual Deg. of Freedom:  15590 
+                      at cycle:  10 
+ 
+Global Deviance:     47055.75 
+            AIC:     47321.75 
+            SBC:     48340.91 
+******************************************************************
+DONE summary Y02A 
+GAMLSS-RS iteration 6: Global Deviance = 67050.92 
+GAMLSS-RS iteration 3: Global Deviance = 106196 
+GAMLSS-RS iteration 2: Global Deviance = 162138.7 
+GAMLSS-RS iteration 2: Global Deviance = 123886.6 
+GAMLSS-RS iteration 5: Global Deviance = 87394.26 
+GAMLSS-RS iteration 7: Global Deviance = 67049.51 
+GAMLSS-RS iteration 7: Global Deviance = 76003.22 
+GAMLSS-RS iteration 8: Global Deviance = 67048.67 
+GAMLSS-RS iteration 8: Global Deviance = 75999.69 
+GAMLSS-RS iteration 6: Global Deviance = 87392.74 
+GAMLSS-RS iteration 9: Global Deviance = 67048.14 
+GAMLSS-RS iteration 4: Global Deviance = 106148.9 
+GAMLSS-RS iteration 9: Global Deviance = 75997.92 
+electricity 75000 101 
+GAMLSS-RS iteration 10: Global Deviance = 67047.8 
+DONE fit Y02B 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.789425   0.129996  -6.073 1.28e-09 ***
+Y02B.101                     0.617925   0.057796  10.691  < 2e-16 ***
+Y02B.201                     0.543999   0.057292   9.495  < 2e-16 ***
+Y02B.301                    -0.008735   0.064114  -0.136 0.891635    
+Y02B.401                     0.059622   0.088675   0.672 0.501362    
+Y02B.701                     0.458073   0.052817   8.673  < 2e-16 ***
+Y02B.801                     0.317815   0.099456   3.196 0.001398 ** 
+Y02B.901                     0.226497   0.052585   4.307 1.66e-05 ***
+tct_type5-10                -0.417001   0.113518  -3.673 0.000240 ***
+tct_type10-15               -0.676057   0.127175  -5.316 1.07e-07 ***
+tct_type>15                 -0.907016   0.139409  -6.506 7.89e-11 ***
+grantyear2011               -0.149059   0.139407  -1.069 0.284975    
+grantyear2012               -0.338382   0.122703  -2.758 0.005825 ** 
+grantyear2013               -0.391022   0.119959  -3.260 0.001117 ** 
+grantyear2014               -0.695802   0.115004  -6.050 1.47e-09 ***
+grantyear2015               -0.850738   0.113874  -7.471 8.29e-14 ***
+grantyear2016               -0.810152   0.111349  -7.276 3.57e-13 ***
+grantyear2017               -1.140062   0.119217  -9.563  < 2e-16 ***
+aiai                         0.602131   0.090555   6.649 3.02e-11 ***
+organizational1              0.005890   0.032763   0.180 0.857324    
+claims_log                   0.359027   0.022036  16.293  < 2e-16 ***
+individual_inventors_log     0.071906   0.020595   3.491 0.000481 ***
+patent_citations_log         0.256368   0.011620  22.063  < 2e-16 ***
+research_citations_log       0.010565   0.016754   0.631 0.528323    
+other_citations_log          0.153755   0.013166  11.678  < 2e-16 ***
+tct_type5-10:grantyear2011   0.179159   0.165068   1.085 0.277773    
+tct_type10-15:grantyear2011  0.230363   0.181916   1.266 0.205415    
+tct_type>15:grantyear2011    0.188387   0.196760   0.957 0.338353    
+tct_type5-10:grantyear2012   0.225751   0.146929   1.536 0.124439    
+tct_type10-15:grantyear2012  0.241907   0.161907   1.494 0.135163    
+tct_type>15:grantyear2012    0.250648   0.176945   1.417 0.156636    
+tct_type5-10:grantyear2013   0.252663   0.145780   1.733 0.083078 .  
+tct_type10-15:grantyear2013  0.310438   0.158884   1.954 0.050731 .  
+tct_type>15:grantyear2013    0.169024   0.174016   0.971 0.331403    
+tct_type5-10:grantyear2014   0.419333   0.142695   2.939 0.003300 ** 
+tct_type10-15:grantyear2014  0.193401   0.153088   1.263 0.206483    
+tct_type>15:grantyear2014    0.481667   0.166978   2.885 0.003923 ** 
+tct_type5-10:grantyear2015   0.328459   0.143405   2.290 0.022007 *  
+tct_type10-15:grantyear2015  0.240149   0.154843   1.551 0.120936    
+tct_type>15:grantyear2015    0.457333   0.167634   2.728 0.006374 ** 
+tct_type5-10:grantyear2016   0.048331   0.138996   0.348 0.728057    
+tct_type10-15:grantyear2016  0.492680   0.154055   3.198 0.001386 ** 
+tct_type>15:grantyear2016    0.309657   0.161280   1.920 0.054873 .  
+tct_type5-10:grantyear2017   0.074905   0.145412   0.515 0.606474    
+tct_type10-15:grantyear2017  0.436800   0.160801   2.716 0.006605 ** 
+tct_type>15:grantyear2017    0.376076   0.167998   2.239 0.025194 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  1.896229   0.317307   5.976 2.32e-09 ***
+Y02B.101                    -0.050518   0.152155  -0.332 0.739881    
+Y02B.201                     0.507314   0.153660   3.302 0.000963 ***
+Y02B.301                     0.407935   0.169584   2.405 0.016159 *  
+Y02B.401                     0.446146   0.214586   2.079 0.037620 *  
+Y02B.701                     0.472756   0.154914   3.052 0.002278 ** 
+Y02B.801                    -0.191946   0.218514  -0.878 0.379728    
+Y02B.901                     1.243708   0.170252   7.305 2.87e-13 ***
+tct_type5-10                -0.223738   0.267970  -0.835 0.403765    
+tct_type10-15               -0.123383   0.296790  -0.416 0.677616    
+tct_type>15                 -0.007172   0.360456  -0.020 0.984125    
+grantyear2011                0.322064   0.308151   1.045 0.295966    
+grantyear2012               -0.466451   0.288134  -1.619 0.105491    
+grantyear2013               -0.276925   0.267192  -1.036 0.300015    
+grantyear2014               -0.274546   0.266906  -1.029 0.303668    
+grantyear2015               -0.226862   0.262295  -0.865 0.387099    
+grantyear2016                0.233281   0.240610   0.970 0.332287    
+grantyear2017                0.544795   0.276538   1.970 0.048845 *  
+organizational1             -0.206377   0.075248  -2.743 0.006100 ** 
+claims_log                  -0.255085   0.054768  -4.658 3.22e-06 ***
+individual_inventors_log     0.121922   0.049128   2.482 0.013084 *  
+patent_citations_log        -0.155267   0.027971  -5.551 2.88e-08 ***
+research_citations_log       0.144039   0.041472   3.473 0.000515 ***
+other_citations_log         -0.042833   0.030063  -1.425 0.154240    
+tct_type5-10:grantyear2011   0.099324   0.374308   0.265 0.790741    
+tct_type10-15:grantyear2011  0.034270   0.405107   0.085 0.932584    
+tct_type>15:grantyear2011   -0.600911   0.461444  -1.302 0.192850    
+tct_type5-10:grantyear2012   0.407005   0.357190   1.139 0.254523    
+tct_type10-15:grantyear2012  0.432168   0.385411   1.121 0.262166    
+tct_type>15:grantyear2012    0.289029   0.435318   0.664 0.506730    
+tct_type5-10:grantyear2013   0.434944   0.330353   1.317 0.187986    
+tct_type10-15:grantyear2013  0.554061   0.371058   1.493 0.135402    
+tct_type>15:grantyear2013    0.276817   0.423104   0.654 0.512957    
+tct_type5-10:grantyear2014   0.473024   0.334443   1.414 0.157270    
+tct_type10-15:grantyear2014  0.427516   0.371231   1.152 0.249493    
+tct_type>15:grantyear2014    0.504493   0.421761   1.196 0.231648    
+tct_type5-10:grantyear2015   0.735095   0.337348   2.179 0.029340 *  
+tct_type10-15:grantyear2015  0.568297   0.362883   1.566 0.117350    
+tct_type>15:grantyear2015    1.031839   0.428042   2.411 0.015935 *  
+tct_type5-10:grantyear2016   0.067407   0.319853   0.211 0.833089    
+tct_type10-15:grantyear2016  0.555820   0.346502   1.604 0.108710    
+tct_type>15:grantyear2016   -0.018149   0.395391  -0.046 0.963390    
+tct_type5-10:grantyear2017  -0.338413   0.345946  -0.978 0.327975    
+tct_type10-15:grantyear2017  0.639394   0.376966   1.696 0.089871 .  
+tct_type>15:grantyear2017    1.123911   0.454358   2.474 0.013383 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -1.2226250  0.2268629  -5.389 7.15e-08 ***
+Y02B.101                     0.1801890  0.0950328   1.896 0.057965 .  
+Y02B.201                     0.1499668  0.0814692   1.841 0.065669 .  
+Y02B.301                    -0.2600278  0.1041371  -2.497 0.012534 *  
+Y02B.401                     0.1678970  0.1549214   1.084 0.278486    
+Y02B.701                    -0.6421896  0.0695863  -9.229  < 2e-16 ***
+Y02B.801                    -0.0582296  0.1952029  -0.298 0.765475    
+Y02B.901                    -0.2307483  0.0678177  -3.402 0.000669 ***
+tct_type5-10                -0.1755135  0.2161276  -0.812 0.416754    
+tct_type10-15               -0.0917587  0.2726804  -0.337 0.736493    
+tct_type>15                 -0.4599534  0.3168809  -1.452 0.146655    
+grantyear2011                0.1695303  0.2148908   0.789 0.430172    
+grantyear2012                0.1313574  0.2757790   0.476 0.633856    
+grantyear2013                0.2793139  0.2398589   1.164 0.244238    
+grantyear2014                0.0521408  0.2434725   0.214 0.830429    
+grantyear2015                0.0151283  0.2408955   0.063 0.949926    
+grantyear2016               -0.0003769  0.1782936  -0.002 0.998313    
+grantyear2017                0.5647125  0.1913187   2.952 0.003164 ** 
+organizational1              0.0432534  0.0599487   0.722 0.470605    
+claims_log                   0.1244009  0.0449608   2.767 0.005665 ** 
+individual_inventors_log    -0.0515720  0.0410431  -1.257 0.208938    
+patent_citations_log         0.1116494  0.0222521   5.017 5.28e-07 ***
+research_citations_log      -0.1941696  0.0303958  -6.388 1.72e-10 ***
+other_citations_log          0.1266619  0.0258994   4.891 1.01e-06 ***
+tct_type5-10:grantyear2011   0.0118288  0.2802688   0.042 0.966336    
+tct_type10-15:grantyear2011 -0.1215524  0.3425824  -0.355 0.722734    
+tct_type>15:grantyear2011    0.7813795  0.4527487   1.726 0.084388 .  
+tct_type5-10:grantyear2012  -0.2533354  0.3384329  -0.749 0.454135    
+tct_type10-15:grantyear2012 -0.1982324  0.3927247  -0.505 0.613732    
+tct_type>15:grantyear2012    0.3783902  0.4533996   0.835 0.403974    
+tct_type5-10:grantyear2013   0.0282731  0.3032030   0.093 0.925707    
+tct_type10-15:grantyear2013 -0.3620988  0.3482469  -1.040 0.298456    
+tct_type>15:grantyear2013    0.1207353  0.4186133   0.288 0.773030    
+tct_type5-10:grantyear2014   0.3108757  0.3059799   1.016 0.309641    
+tct_type10-15:grantyear2014 -0.2424018  0.3565865  -0.680 0.496649    
+tct_type>15:grantyear2014    0.8373806  0.3988059   2.100 0.035766 *  
+tct_type5-10:grantyear2015   0.1767295  0.3007929   0.588 0.556844    
+tct_type10-15:grantyear2015  0.1735222  0.3538526   0.490 0.623870    
+tct_type>15:grantyear2015    0.1637529  0.3776712   0.434 0.664594    
+tct_type5-10:grantyear2016   0.2717829  0.2639799   1.030 0.303229    
+tct_type10-15:grantyear2016  0.2899173  0.2979241   0.973 0.330503    
+tct_type>15:grantyear2016    0.5090274  0.3501094   1.454 0.145987    
+tct_type5-10:grantyear2017  -0.0113514  0.2679327  -0.042 0.966207    
+tct_type10-15:grantyear2017 -0.4843866  0.3009445  -1.610 0.107511    
+tct_type>15:grantyear2017   -0.6080534  0.3378432  -1.800 0.071906 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  20387 
+Degrees of Freedom for the fit:  136
+      Residual Deg. of Freedom:  20251 
+                      at cycle:  10 
+ 
+Global Deviance:     67047.8 
+            AIC:     67319.8 
+            SBC:     68397.28 
+******************************************************************
+DONE summary Y02B 
+GAMLSS-RS iteration 7: Global Deviance = 87392.21 
+GAMLSS-RS iteration 10: Global Deviance = 75996.99 
+DONE fit Y02D 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.771046   0.111652  -6.906 5.12e-12 ***
+Y02D.101                    -0.257411   0.044742  -5.753 8.87e-09 ***
+Y02D.301                    -0.076171   0.045147  -1.687  0.09158 .  
+tct_type5-10                -0.001599   0.082841  -0.019  0.98460    
+tct_type10-15               -0.327972   0.116563  -2.814  0.00490 ** 
+tct_type>15                 -0.406729   0.364189  -1.117  0.26409    
+grantyear2011                0.167580   0.094705   1.769  0.07683 .  
+grantyear2012                0.041692   0.086207   0.484  0.62866    
+grantyear2013               -0.267211   0.087294  -3.061  0.00221 ** 
+grantyear2014               -0.202747   0.089048  -2.277  0.02281 *  
+grantyear2015               -0.590793   0.087430  -6.757 1.44e-11 ***
+grantyear2016               -0.421167   0.085501  -4.926 8.45e-07 ***
+grantyear2017               -1.148391   0.089502 -12.831  < 2e-16 ***
+aiai                         0.586085   0.069853   8.390  < 2e-16 ***
+organizational1              0.021026   0.033679   0.624  0.53243    
+claims_log                   0.438163   0.022496  19.477  < 2e-16 ***
+individual_inventors_log     0.044718   0.019754   2.264  0.02360 *  
+patent_citations_log         0.184453   0.010732  17.188  < 2e-16 ***
+research_citations_log       0.127329   0.015624   8.150 3.82e-16 ***
+other_citations_log          0.138186   0.010723  12.887  < 2e-16 ***
+tct_type5-10:grantyear2011  -0.143654   0.115537  -1.243  0.21375    
+tct_type10-15:grantyear2011 -0.214548   0.161117  -1.332  0.18300    
+tct_type>15:grantyear2011   -1.348390   0.424765  -3.174  0.00150 ** 
+tct_type5-10:grantyear2012  -0.166168   0.108054  -1.538  0.12410    
+tct_type10-15:grantyear2012  0.082330   0.150924   0.546  0.58541    
+tct_type>15:grantyear2012    0.270455   0.455677   0.594  0.55284    
+tct_type5-10:grantyear2013   0.025815   0.110236   0.234  0.81484    
+tct_type10-15:grantyear2013 -0.222994   0.155944  -1.430  0.15274    
+tct_type>15:grantyear2013   -0.746364   0.459829  -1.623  0.10457    
+tct_type5-10:grantyear2014  -0.016795   0.112438  -0.149  0.88126    
+tct_type10-15:grantyear2014 -0.037162   0.149393  -0.249  0.80355    
+tct_type>15:grantyear2014   -0.364124   0.418906  -0.869  0.38473    
+tct_type5-10:grantyear2015   0.187772   0.109823   1.710  0.08732 .  
+tct_type10-15:grantyear2015  0.240578   0.149048   1.614  0.10652    
+tct_type>15:grantyear2015    0.506380   0.396492   1.277  0.20156    
+tct_type5-10:grantyear2016  -0.254023   0.106562  -2.384  0.01714 *  
+tct_type10-15:grantyear2016 -0.192329   0.144864  -1.328  0.18431    
+tct_type>15:grantyear2016   -0.221743   0.388990  -0.570  0.56865    
+tct_type5-10:grantyear2017  -0.212723   0.110168  -1.931  0.05351 .  
+tct_type10-15:grantyear2017  0.135000   0.151223   0.893  0.37202    
+tct_type>15:grantyear2017    0.094291   0.392326   0.240  0.81007    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  1.06394    0.26932   3.950 7.82e-05 ***
+Y02D.101                    -0.54455    0.11141  -4.888 1.03e-06 ***
+Y02D.301                    -0.25204    0.11440  -2.203 0.027592 *  
+tct_type5-10                 0.21017    0.19592   1.073 0.283403    
+tct_type10-15                0.82845    0.37994   2.180 0.029232 *  
+tct_type>15                  1.31891    0.57940   2.276 0.022835 *  
+grantyear2011                0.41686    0.23810   1.751 0.079998 .  
+grantyear2012                0.99677    0.26972   3.696 0.000220 ***
+grantyear2013                0.48662    0.23047   2.111 0.034747 *  
+grantyear2014                0.91336    0.20756   4.400 1.09e-05 ***
+grantyear2015                1.43105    0.22670   6.313 2.79e-10 ***
+grantyear2016                1.13074    0.20511   5.513 3.57e-08 ***
+grantyear2017                0.76373    0.20478   3.729 0.000192 ***
+organizational1              0.24062    0.08227   2.925 0.003452 ** 
+claims_log                   0.01618    0.05223   0.310 0.756658    
+individual_inventors_log    -0.11874    0.04866  -2.440 0.014689 *  
+patent_citations_log         0.22096    0.02666   8.288  < 2e-16 ***
+research_citations_log       0.10715    0.03320   3.228 0.001249 ** 
+other_citations_log         -0.38805    0.02861 -13.564  < 2e-16 ***
+tct_type5-10:grantyear2011   0.45452    0.30508   1.490 0.136278    
+tct_type10-15:grantyear2011 -0.52372    0.45691  -1.146 0.251710    
+tct_type>15:grantyear2011   -0.24590    1.43078  -0.172 0.863544    
+tct_type5-10:grantyear2012  -0.78882    0.30314  -2.602 0.009269 ** 
+tct_type10-15:grantyear2012 -0.68566    0.48538  -1.413 0.157777    
+tct_type>15:grantyear2012    3.63557    1.29624   2.805 0.005040 ** 
+tct_type5-10:grantyear2013   0.23005    0.27330   0.842 0.399941    
+tct_type10-15:grantyear2013 -0.15020    0.46899  -0.320 0.748779    
+tct_type>15:grantyear2013    0.20172    1.03742   0.194 0.845829    
+tct_type5-10:grantyear2014   0.35239    0.25093   1.404 0.160234    
+tct_type10-15:grantyear2014 -0.30778    0.42794  -0.719 0.472017    
+tct_type>15:grantyear2014   -0.84019    0.72088  -1.165 0.243829    
+tct_type5-10:grantyear2015  -0.08704    0.26654  -0.327 0.744012    
+tct_type10-15:grantyear2015 -0.83832    0.44136  -1.899 0.057524 .  
+tct_type>15:grantyear2015   -0.34488    0.72366  -0.477 0.633671    
+tct_type5-10:grantyear2016  -0.07829    0.24873  -0.315 0.752957    
+tct_type10-15:grantyear2016 -1.15812    0.42870  -2.701 0.006909 ** 
+tct_type>15:grantyear2016   -1.62775    0.66720  -2.440 0.014707 *  
+tct_type5-10:grantyear2017  -0.41576    0.26725  -1.556 0.119787    
+tct_type10-15:grantyear2017 -0.60934    0.43547  -1.399 0.161750    
+tct_type>15:grantyear2017   -0.13210    0.74235  -0.178 0.858769    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  0.264633   0.282604   0.936 0.349072    
+Y02D.101                    -0.067035   0.082653  -0.811 0.417354    
+Y02D.301                    -0.008728   0.084332  -0.103 0.917572    
+tct_type5-10                -0.980682   0.271349  -3.614 0.000302 ***
+tct_type10-15               -1.340972   0.291477  -4.601 4.23e-06 ***
+tct_type>15                 -0.883026   0.379899  -2.324 0.020114 *  
+grantyear2011               -1.031728   0.280132  -3.683 0.000231 ***
+grantyear2012               -1.324355   0.257171  -5.150 2.63e-07 ***
+grantyear2013               -1.139189   0.273495  -4.165 3.12e-05 ***
+grantyear2014               -0.909505   0.259637  -3.503 0.000461 ***
+grantyear2015               -1.161624   0.252542  -4.600 4.25e-06 ***
+grantyear2016               -1.021966   0.253183  -4.036 5.44e-05 ***
+grantyear2017               -0.880610   0.273468  -3.220 0.001283 ** 
+organizational1             -0.030085   0.053978  -0.557 0.577285    
+claims_log                  -0.101145   0.034481  -2.933 0.003356 ** 
+individual_inventors_log     0.007324   0.029125   0.251 0.801447    
+patent_citations_log        -0.028151   0.015536  -1.812 0.070011 .  
+research_citations_log      -0.038483   0.021521  -1.788 0.073761 .  
+other_citations_log          0.243834   0.019566  12.462  < 2e-16 ***
+tct_type5-10:grantyear2011   0.641484   0.311872   2.057 0.039709 *  
+tct_type10-15:grantyear2011  1.393516   0.352314   3.955 7.67e-05 ***
+tct_type>15:grantyear2011    1.948411   0.488987   3.985 6.78e-05 ***
+tct_type5-10:grantyear2012   1.335183   0.300822   4.438 9.10e-06 ***
+tct_type10-15:grantyear2012  1.480320   0.319074   4.639 3.51e-06 ***
+tct_type>15:grantyear2012    0.991341   0.395077   2.509 0.012106 *  
+tct_type5-10:grantyear2013   1.107830   0.308124   3.595 0.000325 ***
+tct_type10-15:grantyear2013  1.395347   0.338046   4.128 3.68e-05 ***
+tct_type>15:grantyear2013    0.780571   0.468792   1.665 0.095912 .  
+tct_type5-10:grantyear2014   0.968614   0.290848   3.330 0.000869 ***
+tct_type10-15:grantyear2014  1.214450   0.315796   3.846 0.000121 ***
+tct_type>15:grantyear2014    0.813526   0.477374   1.704 0.088362 .  
+tct_type5-10:grantyear2015   1.092785   0.284036   3.847 0.000120 ***
+tct_type10-15:grantyear2015  1.483700   0.310764   4.774 1.81e-06 ***
+tct_type>15:grantyear2015    0.880382   0.400327   2.199 0.027876 *  
+tct_type5-10:grantyear2016   0.912021   0.286057   3.188 0.001433 ** 
+tct_type10-15:grantyear2016  1.236787   0.324264   3.814 0.000137 ***
+tct_type>15:grantyear2016    1.022058   0.461190   2.216 0.026692 *  
+tct_type5-10:grantyear2017   0.623787   0.326459   1.911 0.056047 .  
+tct_type10-15:grantyear2017  1.135793   0.351091   3.235 0.001218 ** 
+tct_type>15:grantyear2017    0.535005   0.425979   1.256 0.209150    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  23922 
+Degrees of Freedom for the fit:  121
+      Residual Deg. of Freedom:  23801 
+                      at cycle:  10 
+ 
+Global Deviance:     75996.99 
+            AIC:     76238.99 
+            SBC:     77216.98 
+******************************************************************
+DONE summary Y02D 
+GAMLSS-RS iteration 8: Global Deviance = 87391.98 
+GAMLSS-RS iteration 3: Global Deviance = 123438.3 
+GAMLSS-RS iteration 3: Global Deviance = 161255.7 
+GAMLSS-RS iteration 5: Global Deviance = 106136.4 
+GAMLSS-RS iteration 9: Global Deviance = 87391.85 
+GAMLSS-RS iteration 10: Global Deviance = 87391.78 
+DONE fit Y02P 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.983064   0.128630  -7.643 2.18e-14 ***
+Y02P.101                     0.058220   0.076681   0.759 0.447709    
+Y02P.201                    -0.153680   0.058581  -2.623 0.008710 ** 
+Y02P.301                    -0.014310   0.059980  -0.239 0.811438    
+Y02P.401                    -0.082491   0.084051  -0.981 0.326383    
+Y02P.601                     0.343487   0.076910   4.466 7.99e-06 ***
+Y02P.701                    -0.201561   0.060963  -3.306 0.000946 ***
+Y02P.801                     0.347906   0.066443   5.236 1.65e-07 ***
+Y02P.901                     0.054269   0.064421   0.842 0.399567    
+tct_type5-10                -0.382704   0.111181  -3.442 0.000578 ***
+tct_type10-15               -0.363508   0.116860  -3.111 0.001868 ** 
+tct_type>15                 -0.526559   0.119999  -4.388 1.15e-05 ***
+grantyear2011                0.465631   0.151569   3.072 0.002127 ** 
+grantyear2012                0.251100   0.146576   1.713 0.086702 .  
+grantyear2013                0.159700   0.137583   1.161 0.245749    
+grantyear2014                0.024982   0.131826   0.190 0.849700    
+grantyear2015               -0.433786   0.127022  -3.415 0.000638 ***
+grantyear2016               -0.576403   0.134399  -4.289 1.80e-05 ***
+grantyear2017               -0.825887   0.134130  -6.157 7.48e-10 ***
+aiai                         0.522075   0.080107   6.517 7.26e-11 ***
+organizational1              0.102960   0.035245   2.921 0.003488 ** 
+claims_log                   0.302061   0.019540  15.459  < 2e-16 ***
+individual_inventors_log    -0.039321   0.017466  -2.251 0.024373 *  
+patent_citations_log         0.263242   0.010039  26.222  < 2e-16 ***
+research_citations_log       0.152389   0.011377  13.394  < 2e-16 ***
+other_citations_log          0.154233   0.012751  12.096  < 2e-16 ***
+tct_type5-10:grantyear2011  -0.293609   0.169744  -1.730 0.083690 .  
+tct_type10-15:grantyear2011 -0.333169   0.173987  -1.915 0.055512 .  
+tct_type>15:grantyear2011   -0.154312   0.180383  -0.855 0.392298    
+tct_type5-10:grantyear2012  -0.090943   0.166194  -0.547 0.584241    
+tct_type10-15:grantyear2012 -0.324996   0.169763  -1.914 0.055575 .  
+tct_type>15:grantyear2012   -0.232608   0.170658  -1.363 0.172887    
+tct_type5-10:grantyear2013  -0.148119   0.159769  -0.927 0.353890    
+tct_type10-15:grantyear2013 -0.513961   0.161212  -3.188 0.001433 ** 
+tct_type>15:grantyear2013   -0.288706   0.163913  -1.761 0.078190 .  
+tct_type5-10:grantyear2014  -0.298877   0.155967  -1.916 0.055336 .  
+tct_type10-15:grantyear2014 -0.390700   0.156012  -2.504 0.012274 *  
+tct_type>15:grantyear2014   -0.409476   0.158832  -2.578 0.009940 ** 
+tct_type5-10:grantyear2015   0.145112   0.154078   0.942 0.346297    
+tct_type10-15:grantyear2015  0.002321   0.151846   0.015 0.987805    
+tct_type>15:grantyear2015   -0.080974   0.153660  -0.527 0.598220    
+tct_type5-10:grantyear2016   0.539950   0.160172   3.371 0.000750 ***
+tct_type10-15:grantyear2016  0.124833   0.158816   0.786 0.431862    
+tct_type>15:grantyear2016   -0.030428   0.157922  -0.193 0.847215    
+tct_type5-10:grantyear2017   0.071244   0.161688   0.441 0.659485    
+tct_type10-15:grantyear2017 -0.256411   0.162016  -1.583 0.113515    
+tct_type>15:grantyear2017   -0.226819   0.159078  -1.426 0.153925    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  2.02833    0.31023   6.538 6.31e-11 ***
+Y02P.101                     1.05070    0.15995   6.569 5.13e-11 ***
+Y02P.201                     0.08915    0.12529   0.712 0.476769    
+Y02P.301                    -0.14313    0.12688  -1.128 0.259297    
+Y02P.401                    -0.06333    0.17830  -0.355 0.722453    
+Y02P.601                    -0.37832    0.17809  -2.124 0.033649 *  
+Y02P.701                    -0.05823    0.13130  -0.443 0.657424    
+Y02P.801                    -0.50137    0.13901  -3.607 0.000311 ***
+Y02P.901                    -0.01838    0.13581  -0.135 0.892355    
+tct_type5-10                 0.01778    0.26326   0.068 0.946140    
+tct_type10-15                0.56146    0.27512   2.041 0.041281 *  
+tct_type>15                  0.64534    0.29016   2.224 0.026147 *  
+grantyear2011                0.71792    0.32431   2.214 0.026859 *  
+grantyear2012                0.65163    0.30088   2.166 0.030339 *  
+grantyear2013                0.75173    0.29686   2.532 0.011336 *  
+grantyear2014                1.69531    0.33094   5.123 3.03e-07 ***
+grantyear2015                0.51568    0.29838   1.728 0.083952 .  
+grantyear2016                0.63381    0.31056   2.041 0.041273 *  
+grantyear2017                0.45353    0.31646   1.433 0.151829    
+organizational1              0.06274    0.08516   0.737 0.461316    
+claims_log                  -0.22305    0.04752  -4.694 2.69e-06 ***
+individual_inventors_log    -0.09837    0.03983  -2.470 0.013531 *  
+patent_citations_log        -0.15445    0.02228  -6.933 4.18e-12 ***
+research_citations_log       0.13069    0.02384   5.482 4.24e-08 ***
+other_citations_log          0.03459    0.02680   1.291 0.196821    
+tct_type5-10:grantyear2011  -0.40270    0.36420  -1.106 0.268868    
+tct_type10-15:grantyear2011 -0.53545    0.37526  -1.427 0.153623    
+tct_type>15:grantyear2011   -0.35192    0.39300  -0.895 0.370546    
+tct_type5-10:grantyear2012  -0.30970    0.34444  -0.899 0.368592    
+tct_type10-15:grantyear2012 -0.86635    0.35076  -2.470 0.013520 *  
+tct_type>15:grantyear2012   -1.06214    0.36493  -2.911 0.003611 ** 
+tct_type5-10:grantyear2013  -0.51866    0.34631  -1.498 0.134224    
+tct_type10-15:grantyear2013 -0.87126    0.34429  -2.531 0.011391 *  
+tct_type>15:grantyear2013   -0.69624    0.36289  -1.919 0.055043 .  
+tct_type5-10:grantyear2014  -1.40026    0.37617  -3.722 0.000198 ***
+tct_type10-15:grantyear2014 -1.90239    0.38209  -4.979 6.43e-07 ***
+tct_type>15:grantyear2014   -1.47876    0.39294  -3.763 0.000168 ***
+tct_type5-10:grantyear2015   0.13379    0.37139   0.360 0.718680    
+tct_type10-15:grantyear2015 -0.55433    0.35097  -1.579 0.114243    
+tct_type>15:grantyear2015   -0.49943    0.36155  -1.381 0.167179    
+tct_type5-10:grantyear2016   0.16571    0.34677   0.478 0.632741    
+tct_type10-15:grantyear2016 -0.51497    0.35971  -1.432 0.152257    
+tct_type>15:grantyear2016   -0.86556    0.36590  -2.366 0.018008 *  
+tct_type5-10:grantyear2017  -0.18323    0.37662  -0.487 0.626599    
+tct_type10-15:grantyear2017 -0.54994    0.38172  -1.441 0.149685    
+tct_type>15:grantyear2017    0.17479    0.40076   0.436 0.662727    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.68144    0.26771  -2.545 0.010918 *  
+Y02P.101                     0.11727    0.09467   1.239 0.215450    
+Y02P.201                     0.17690    0.08718   2.029 0.042456 *  
+Y02P.301                     0.34826    0.08867   3.928 8.59e-05 ***
+Y02P.401                     0.07070    0.14728   0.480 0.631183    
+Y02P.601                    -0.13801    0.13837  -0.997 0.318555    
+Y02P.701                    -0.12938    0.09242  -1.400 0.161531    
+Y02P.801                    -0.01821    0.14503  -0.126 0.900095    
+Y02P.901                    -0.19751    0.10391  -1.901 0.057342 .  
+tct_type5-10                -0.38898    0.28889  -1.346 0.178158    
+tct_type10-15               -0.85603    0.24821  -3.449 0.000564 ***
+tct_type>15                 -0.88376    0.25253  -3.500 0.000467 ***
+grantyear2011               -0.50498    0.28366  -1.780 0.075047 .  
+grantyear2012               -0.24551    0.29881  -0.822 0.411302    
+grantyear2013               -0.59008    0.26804  -2.202 0.027706 *  
+grantyear2014               -0.91461    0.23619  -3.872 0.000108 ***
+grantyear2015               -0.59567    0.27164  -2.193 0.028324 *  
+grantyear2016               -0.62300    0.26974  -2.310 0.020914 *  
+grantyear2017               -0.79335    0.29700  -2.671 0.007560 ** 
+organizational1              0.10234    0.06654   1.538 0.124053    
+claims_log                   0.10248    0.03313   3.093 0.001983 ** 
+individual_inventors_log     0.01468    0.02911   0.504 0.614154    
+patent_citations_log         0.01312    0.01804   0.727 0.467135    
+research_citations_log       0.12934    0.01766   7.323 2.48e-13 ***
+other_citations_log          0.12798    0.02132   6.003 1.96e-09 ***
+tct_type5-10:grantyear2011   0.16521    0.35848   0.461 0.644906    
+tct_type10-15:grantyear2011  0.39896    0.31413   1.270 0.204077    
+tct_type>15:grantyear2011    0.58294    0.31618   1.844 0.065237 .  
+tct_type5-10:grantyear2012  -0.05400    0.37354  -0.145 0.885049    
+tct_type10-15:grantyear2012  0.49119    0.34169   1.438 0.150579    
+tct_type>15:grantyear2012    0.28235    0.34276   0.824 0.410089    
+tct_type5-10:grantyear2013   0.61516    0.35774   1.720 0.085515 .  
+tct_type10-15:grantyear2013  0.75743    0.30545   2.480 0.013153 *  
+tct_type>15:grantyear2013    0.60719    0.30456   1.994 0.046192 *  
+tct_type5-10:grantyear2014   0.78959    0.33489   2.358 0.018390 *  
+tct_type10-15:grantyear2014  0.93093    0.27868   3.341 0.000837 ***
+tct_type>15:grantyear2014    0.87775    0.27460   3.196 0.001393 ** 
+tct_type5-10:grantyear2015  -0.00847    0.34891  -0.024 0.980632    
+tct_type10-15:grantyear2015  0.78710    0.30861   2.550 0.010762 *  
+tct_type>15:grantyear2015    0.66580    0.30732   2.166 0.030285 *  
+tct_type5-10:grantyear2016   0.40001    0.33441   1.196 0.231636    
+tct_type10-15:grantyear2016  0.75293    0.29991   2.511 0.012059 *  
+tct_type>15:grantyear2016    0.64257    0.30782   2.087 0.036854 *  
+tct_type5-10:grantyear2017   0.59068    0.39105   1.510 0.130928    
+tct_type10-15:grantyear2017  0.94945    0.33909   2.800 0.005113 ** 
+tct_type>15:grantyear2017    0.41670    0.32432   1.285 0.198848    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  35580 
+Degrees of Freedom for the fit:  139
+      Residual Deg. of Freedom:  35441 
+                      at cycle:  10 
+ 
+Global Deviance:     87391.78 
+            AIC:     87669.78 
+            SBC:     88848.43 
+******************************************************************
+DONE summary Y02P 
+GAMLSS-RS iteration 6: Global Deviance = 106130.7 
+GAMLSS-RS iteration 4: Global Deviance = 123360.4 
+GAMLSS-RS iteration 4: Global Deviance = 160694.3 
+GAMLSS-RS iteration 7: Global Deviance = 106127.8 
+GAMLSS-RS iteration 1: Global Deviance = 229354.8 
+GAMLSS-RS iteration 5: Global Deviance = 123351.5 
+GAMLSS-RS iteration 8: Global Deviance = 106126.4 
+GAMLSS-RS iteration 5: Global Deviance = 160348.8 
+GAMLSS-RS iteration 9: Global Deviance = 106125.5 
+GAMLSS-RS iteration 6: Global Deviance = 123349.5 
+GAMLSS-RS iteration 10: Global Deviance = 106124.8 
+DONE fit buildings 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.589078   0.087242  -6.752 1.48e-11 ***
+subclass_E04B1               0.289320   0.026383  10.966  < 2e-16 ***
+subclass_E04C1              -0.059765   0.032394  -1.845 0.065060 .  
+subclass_E04D1               0.074333   0.036858   2.017 0.043733 *  
+subclass_E04F1               0.340843   0.032053  10.634  < 2e-16 ***
+subclass_E04G1              -0.099760   0.039913  -2.499 0.012444 *  
+subclass_E04H1               0.090673   0.029982   3.024 0.002495 ** 
+subclass_F21K1               0.343558   0.030217  11.370  < 2e-16 ***
+subclass_F21L1              -0.382845   0.048529  -7.889 3.14e-15 ***
+subclass_F21S1               0.018407   0.026447   0.696 0.486449    
+subclass_F21V1               0.104117   0.028405   3.665 0.000247 ***
+subclass_F21W1               0.149393   0.033643   4.441 9.00e-06 ***
+subclass_F21Y1               0.275989   0.029312   9.416  < 2e-16 ***
+tct_type5-10                -0.406451   0.083822  -4.849 1.25e-06 ***
+tct_type10-15               -0.713918   0.085927  -8.308  < 2e-16 ***
+tct_type>15                 -1.091212   0.082555 -13.218  < 2e-16 ***
+grantyear2011               -0.076486   0.095900  -0.798 0.425131    
+grantyear2012               -0.294394   0.093034  -3.164 0.001555 ** 
+grantyear2013               -0.187369   0.097207  -1.928 0.053923 .  
+grantyear2014               -0.515754   0.096819  -5.327 1.00e-07 ***
+grantyear2015               -0.779420   0.096409  -8.084 6.45e-16 ***
+grantyear2016               -0.639988   0.108196  -5.915 3.35e-09 ***
+grantyear2017               -1.142651   0.103601 -11.029  < 2e-16 ***
+aiai                         0.710527   0.104921   6.772 1.29e-11 ***
+organizational1              0.042984   0.022521   1.909 0.056320 .  
+claims_log                   0.192801   0.015584  12.372  < 2e-16 ***
+individual_inventors_log     0.038214   0.016461   2.322 0.020263 *  
+patent_citations_log         0.319664   0.008864  36.063  < 2e-16 ***
+research_citations_log      -0.096158   0.021634  -4.445 8.83e-06 ***
+other_citations_log          0.154595   0.010283  15.034  < 2e-16 ***
+tct_type5-10:grantyear2011   0.223179   0.119314   1.871 0.061421 .  
+tct_type10-15:grantyear2011  0.193260   0.119998   1.611 0.107291    
+tct_type>15:grantyear2011    0.305423   0.113303   2.696 0.007029 ** 
+tct_type5-10:grantyear2012   0.225864   0.118377   1.908 0.056398 .  
+tct_type10-15:grantyear2012  0.442918   0.117054   3.784 0.000155 ***
+tct_type>15:grantyear2012    0.544578   0.110197   4.942 7.77e-07 ***
+tct_type5-10:grantyear2013   0.073949   0.122087   0.606 0.544715    
+tct_type10-15:grantyear2013  0.367757   0.121990   3.015 0.002575 ** 
+tct_type>15:grantyear2013    0.474527   0.112829   4.206 2.61e-05 ***
+tct_type5-10:grantyear2014   0.348679   0.121742   2.864 0.004185 ** 
+tct_type10-15:grantyear2014  0.589121   0.120805   4.877 1.08e-06 ***
+tct_type>15:grantyear2014    0.632706   0.111996   5.649 1.62e-08 ***
+tct_type5-10:grantyear2015   0.315575   0.121410   2.599 0.009347 ** 
+tct_type10-15:grantyear2015  0.513001   0.117816   4.354 1.34e-05 ***
+tct_type>15:grantyear2015    0.706126   0.112101   6.299 3.03e-10 ***
+tct_type5-10:grantyear2016   0.218170   0.131526   1.659 0.097172 .  
+tct_type10-15:grantyear2016  0.429867   0.130987   3.282 0.001033 ** 
+tct_type>15:grantyear2016    0.501210   0.121827   4.114 3.90e-05 ***
+tct_type5-10:grantyear2017   0.193204   0.128840   1.500 0.133736    
+tct_type10-15:grantyear2017  0.517907   0.130706   3.962 7.44e-05 ***
+tct_type>15:grantyear2017    0.640721   0.118009   5.429 5.69e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  1.573769   0.324418   4.851 1.23e-06 ***
+subclass_E04B1               0.167708   0.075040   2.235 0.025429 *  
+subclass_E04C1              -0.327702   0.100345  -3.266 0.001093 ** 
+subclass_E04D1              -0.392490   0.093580  -4.194 2.75e-05 ***
+subclass_E04F1               0.122690   0.077436   1.584 0.113112    
+subclass_E04G1              -0.531798   0.108654  -4.894 9.90e-07 ***
+subclass_E04H1               0.759567   0.215815   3.520 0.000433 ***
+subclass_F21K1               0.161593   0.069541   2.324 0.020146 *  
+subclass_F21L1              -0.436881   0.154439  -2.829 0.004675 ** 
+subclass_F21S1              -0.262867   0.062176  -4.228 2.37e-05 ***
+subclass_F21V1              -0.004334   0.070680  -0.061 0.951102    
+subclass_F21W1               0.363968   0.074306   4.898 9.71e-07 ***
+subclass_F21Y1               0.065955   0.071076   0.928 0.353436    
+tct_type5-10                 0.651849   0.362695   1.797 0.072307 .  
+tct_type10-15                0.688333   0.326337   2.109 0.034928 *  
+tct_type>15                  1.028826   0.330461   3.113 0.001852 ** 
+grantyear2011                0.065317   0.342487   0.191 0.848750    
+grantyear2012               -0.288310   0.323478  -0.891 0.372784    
+grantyear2013                0.695691   0.299977   2.319 0.020393 *  
+grantyear2014                0.864256   0.318452   2.714 0.006652 ** 
+grantyear2015                0.455176   0.310581   1.466 0.142776    
+grantyear2016                1.132001   0.317199   3.569 0.000359 ***
+grantyear2017                0.773099   0.333843   2.316 0.020577 *  
+organizational1              0.132316   0.061126   2.165 0.030422 *  
+claims_log                  -0.271819   0.047506  -5.722 1.06e-08 ***
+individual_inventors_log     0.100954   0.042838   2.357 0.018447 *  
+patent_citations_log        -0.216716   0.022299  -9.719  < 2e-16 ***
+research_citations_log       0.258467   0.054670   4.728 2.28e-06 ***
+other_citations_log          0.086506   0.024308   3.559 0.000373 ***
+tct_type5-10:grantyear2011  -0.717178   0.433079  -1.656 0.097731 .  
+tct_type10-15:grantyear2011 -0.363328   0.413893  -0.878 0.380042    
+tct_type>15:grantyear2011   -0.632463   0.404317  -1.564 0.117762    
+tct_type5-10:grantyear2012  -0.156754   0.415874  -0.377 0.706230    
+tct_type10-15:grantyear2012 -0.168757   0.384879  -0.438 0.661050    
+tct_type>15:grantyear2012   -0.512493   0.380946  -1.345 0.178532    
+tct_type5-10:grantyear2013  -0.932463   0.395740  -2.356 0.018466 *  
+tct_type10-15:grantyear2013 -0.449843   0.366282  -1.228 0.219406    
+tct_type>15:grantyear2013   -0.971381   0.360047  -2.698 0.006981 ** 
+tct_type5-10:grantyear2014  -0.935695   0.415691  -2.251 0.024396 *  
+tct_type10-15:grantyear2014 -0.534999   0.378889  -1.412 0.157953    
+tct_type>15:grantyear2014   -1.371178   0.375178  -3.655 0.000258 ***
+tct_type5-10:grantyear2015  -0.333327   0.407236  -0.819 0.413072    
+tct_type10-15:grantyear2015 -0.665385   0.376180  -1.769 0.076937 .  
+tct_type>15:grantyear2015   -0.668424   0.368593  -1.813 0.069771 .  
+tct_type5-10:grantyear2016  -0.691041   0.415077  -1.665 0.095952 .  
+tct_type10-15:grantyear2016 -0.828338   0.385589  -2.148 0.031701 *  
+tct_type>15:grantyear2016   -1.341570   0.374456  -3.583 0.000341 ***
+tct_type5-10:grantyear2017  -0.592393   0.439929  -1.347 0.178129    
+tct_type10-15:grantyear2017 -0.591157   0.403608  -1.465 0.143017    
+tct_type>15:grantyear2017   -0.997325   0.386668  -2.579 0.009905 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -2.4061760  0.2742358  -8.774  < 2e-16 ***
+subclass_E04B1              -0.0007763  0.0669682  -0.012 0.990751    
+subclass_E04C1              -0.1232657  0.1119854  -1.101 0.271022    
+subclass_E04D1               0.3689112  0.1333720   2.766 0.005677 ** 
+subclass_E04F1               0.5115427  0.0779949   6.559 5.51e-11 ***
+subclass_E04G1               0.1439980  0.1567400   0.919 0.358256    
+subclass_E04H1              -0.8181172  0.0729328 -11.217  < 2e-16 ***
+subclass_F21K1              -0.0174889  0.0628975  -0.278 0.780972    
+subclass_F21L1               0.9738134  0.1402992   6.941 3.96e-12 ***
+subclass_F21S1               0.1208604  0.0634536   1.905 0.056827 .  
+subclass_F21V1               0.1722545  0.0651187   2.645 0.008167 ** 
+subclass_F21W1              -0.0131831  0.0686687  -0.192 0.847758    
+subclass_F21Y1               0.1403824  0.0667049   2.105 0.035339 *  
+tct_type5-10                 2.0151301  0.2631357   7.658 1.94e-14 ***
+tct_type10-15                0.1175973  0.2828370   0.416 0.677575    
+tct_type>15                 -0.0599922  0.2708601  -0.221 0.824714    
+grantyear2011                0.3337494  0.3190134   1.046 0.295480    
+grantyear2012                0.7852683  0.4127104   1.903 0.057087 .  
+grantyear2013                0.9370721  0.2605738   3.596 0.000323 ***
+grantyear2014                0.5364801  0.2656893   2.019 0.043474 *  
+grantyear2015                0.8052046  0.3071479   2.622 0.008757 ** 
+grantyear2016                0.8617015  0.2762433   3.119 0.001814 ** 
+grantyear2017                1.1560114  0.2934488   3.939 8.18e-05 ***
+organizational1              0.0581204  0.0632342   0.919 0.358035    
+claims_log                   0.2275372  0.0388369   5.859 4.71e-09 ***
+individual_inventors_log    -0.1096271  0.0378895  -2.893 0.003814 ** 
+patent_citations_log         0.0541766  0.0213628   2.536 0.011216 *  
+research_citations_log      -0.2408732  0.0360563  -6.680 2.42e-11 ***
+other_citations_log          0.1773962  0.0223342   7.943 2.04e-15 ***
+tct_type5-10:grantyear2011  -1.7314470  0.3915500  -4.422 9.81e-06 ***
+tct_type10-15:grantyear2011 -0.1752174  0.3890122  -0.450 0.652413    
+tct_type>15:grantyear2011    0.0348253  0.3739856   0.093 0.925809    
+tct_type5-10:grantyear2012  -2.1688679  0.4639656  -4.675 2.96e-06 ***
+tct_type10-15:grantyear2012 -0.2610039  0.4685775  -0.557 0.577522    
+tct_type>15:grantyear2012   -0.0391012  0.4614890  -0.085 0.932478    
+tct_type5-10:grantyear2013  -2.1854998  0.3117399  -7.011 2.42e-12 ***
+tct_type10-15:grantyear2013 -0.3782547  0.3136247  -1.206 0.227797    
+tct_type>15:grantyear2013   -0.3270314  0.2997138  -1.091 0.275216    
+tct_type5-10:grantyear2014  -1.9268692  0.3120819  -6.174 6.72e-10 ***
+tct_type10-15:grantyear2014  0.0006275  0.3151597   0.002 0.998411    
+tct_type>15:grantyear2014    0.3956205  0.3080046   1.284 0.198989    
+tct_type5-10:grantyear2015  -2.3674905  0.3400749  -6.962 3.42e-12 ***
+tct_type10-15:grantyear2015 -0.6560197  0.3643291  -1.801 0.071771 .  
+tct_type>15:grantyear2015   -0.0950936  0.3434887  -0.277 0.781900    
+tct_type5-10:grantyear2016  -2.4469606  0.3079880  -7.945 2.00e-15 ***
+tct_type10-15:grantyear2016 -0.4680597  0.3271627  -1.431 0.152536    
+tct_type>15:grantyear2016   -0.2809784  0.3125313  -0.899 0.368637    
+tct_type5-10:grantyear2017  -2.7821129  0.3336330  -8.339  < 2e-16 ***
+tct_type10-15:grantyear2017 -0.5043985  0.3540800  -1.425 0.154301    
+tct_type>15:grantyear2017   -0.5550870  0.3279220  -1.693 0.090514 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  34288 
+Degrees of Freedom for the fit:  151
+      Residual Deg. of Freedom:  34137 
+                      at cycle:  10 
+ 
+Global Deviance:     106124.8 
+            AIC:     106426.8 
+            SBC:     107701.6 
+******************************************************************
+DONE summary buildings 
+GAMLSS-RS iteration 7: Global Deviance = 123348.5 
+GAMLSS-RS iteration 1: Global Deviance = 224148.4 
+GAMLSS-RS iteration 6: Global Deviance = 160178.1 
+GAMLSS-RS iteration 8: Global Deviance = 123347.8 
+GAMLSS-RS iteration 9: Global Deviance = 123347.4 
+GAMLSS-RS iteration 7: Global Deviance = 160109.9 
+GAMLSS-RS iteration 10: Global Deviance = 123347.1 
+GAMLSS-RS iteration 2: Global Deviance = 225950.4 
+DONE fit Y02T 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -1.673039   0.090275 -18.533  < 2e-16 ***
+Y02T.101                     1.020002   0.054177  18.827  < 2e-16 ***
+Y02T.301                     0.737781   0.105867   6.969 3.24e-12 ***
+Y02T.501                     0.818540   0.057057  14.346  < 2e-16 ***
+Y02T.701                     0.757639   0.090377   8.383  < 2e-16 ***
+Y02T.901                     0.627566   0.022880  27.429  < 2e-16 ***
+tct_type5-10                -0.077981   0.067947  -1.148  0.25111    
+tct_type10-15               -0.222809   0.080290  -2.775  0.00552 ** 
+tct_type>15                 -0.414093   0.084422  -4.905 9.38e-07 ***
+grantyear2011               -0.007837   0.079055  -0.099  0.92103    
+grantyear2012               -0.041839   0.077617  -0.539  0.58986    
+grantyear2013               -0.020755   0.076255  -0.272  0.78549    
+grantyear2014               -0.318068   0.078491  -4.052 5.08e-05 ***
+grantyear2015               -0.562796   0.077469  -7.265 3.80e-13 ***
+grantyear2016               -0.595618   0.076361  -7.800 6.33e-15 ***
+grantyear2017               -1.000508   0.078688 -12.715  < 2e-16 ***
+aiai                         0.480945   0.054050   8.898  < 2e-16 ***
+organizational1              0.003676   0.024043   0.153  0.87847    
+claims_log                   0.259748   0.014285  18.183  < 2e-16 ***
+individual_inventors_log     0.047251   0.012090   3.908 9.30e-05 ***
+patent_citations_log         0.256662   0.007690  33.376  < 2e-16 ***
+research_citations_log       0.115962   0.014292   8.114 5.05e-16 ***
+other_citations_log          0.117529   0.010342  11.364  < 2e-16 ***
+tct_type5-10:grantyear2011   0.012115   0.095989   0.126  0.89957    
+tct_type10-15:grantyear2011  0.146673   0.107607   1.363  0.17288    
+tct_type>15:grantyear2011    0.110191   0.113598   0.970  0.33205    
+tct_type5-10:grantyear2012  -0.152445   0.093224  -1.635  0.10201    
+tct_type10-15:grantyear2012 -0.032741   0.104630  -0.313  0.75434    
+tct_type>15:grantyear2012   -0.015866   0.109476  -0.145  0.88477    
+tct_type5-10:grantyear2013  -0.130152   0.092858  -1.402  0.16104    
+tct_type10-15:grantyear2013 -0.249417   0.101781  -2.451  0.01427 *  
+tct_type>15:grantyear2013   -0.044357   0.107723  -0.412  0.68051    
+tct_type5-10:grantyear2014  -0.084965   0.095000  -0.894  0.37113    
+tct_type10-15:grantyear2014  0.051334   0.103257   0.497  0.61909    
+tct_type>15:grantyear2014    0.061812   0.108244   0.571  0.56797    
+tct_type5-10:grantyear2015   0.064947   0.097739   0.664  0.50638    
+tct_type10-15:grantyear2015  0.102556   0.103068   0.995  0.31973    
+tct_type>15:grantyear2015    0.198934   0.106887   1.861  0.06273 .  
+tct_type5-10:grantyear2016   0.008947   0.097017   0.092  0.92652    
+tct_type10-15:grantyear2016  0.104638   0.102282   1.023  0.30630    
+tct_type>15:grantyear2016    0.182018   0.105330   1.728  0.08398 .  
+tct_type5-10:grantyear2017  -0.042155   0.100571  -0.419  0.67510    
+tct_type10-15:grantyear2017 -0.085987   0.105332  -0.816  0.41431    
+tct_type>15:grantyear2017    0.003024   0.106994   0.028  0.97745    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  0.470750   0.363154   1.296 0.194886    
+Y02T.101                     0.177671   0.141237   1.258 0.208413    
+Y02T.301                     0.892230   0.233818   3.816 0.000136 ***
+Y02T.501                    -0.065335   0.149234  -0.438 0.661531    
+Y02T.701                     0.915943   0.240641   3.806 0.000141 ***
+Y02T.901                     0.434441   0.063927   6.796 1.09e-11 ***
+tct_type5-10                -0.234897   0.322514  -0.728 0.466415    
+tct_type10-15                0.408561   0.332658   1.228 0.219389    
+tct_type>15                  0.480469   0.339508   1.415 0.157021    
+grantyear2011               -0.308818   0.340530  -0.907 0.364478    
+grantyear2012               -0.054002   0.343840  -0.157 0.875203    
+grantyear2013                0.071166   0.356073   0.200 0.841589    
+grantyear2014                0.496366   0.347994   1.426 0.153771    
+grantyear2015                0.352712   0.335152   1.052 0.292625    
+grantyear2016                0.696721   0.359512   1.938 0.052634 .  
+grantyear2017                0.469875   0.338589   1.388 0.165221    
+organizational1             -0.017884   0.068131  -0.262 0.792944    
+claims_log                  -0.019879   0.041388  -0.480 0.631007    
+individual_inventors_log     0.016219   0.034551   0.469 0.638762    
+patent_citations_log        -0.083672   0.020734  -4.036 5.46e-05 ***
+research_citations_log       0.171087   0.033086   5.171 2.34e-07 ***
+other_citations_log         -0.003162   0.026943  -0.117 0.906573    
+tct_type5-10:grantyear2011   0.460424   0.365463   1.260 0.207735    
+tct_type10-15:grantyear2011  0.102519   0.385042   0.266 0.790046    
+tct_type>15:grantyear2011   -0.043286   0.393670  -0.110 0.912446    
+tct_type5-10:grantyear2012   0.052515   0.370834   0.142 0.887387    
+tct_type10-15:grantyear2012 -0.325563   0.378007  -0.861 0.389099    
+tct_type>15:grantyear2012   -0.215514   0.385925  -0.558 0.576551    
+tct_type5-10:grantyear2013   0.313659   0.383869   0.817 0.413877    
+tct_type10-15:grantyear2013 -0.433511   0.389365  -1.113 0.265552    
+tct_type>15:grantyear2013   -0.307006   0.399071  -0.769 0.441719    
+tct_type5-10:grantyear2014   0.198401   0.412830   0.481 0.630813    
+tct_type10-15:grantyear2014 -0.115060   0.401952  -0.286 0.774685    
+tct_type>15:grantyear2014   -0.508060   0.392255  -1.295 0.195249    
+tct_type5-10:grantyear2015   0.575776   0.362674   1.588 0.112388    
+tct_type10-15:grantyear2015 -0.177385   0.366466  -0.484 0.628358    
+tct_type>15:grantyear2015   -0.215493   0.374159  -0.576 0.564659    
+tct_type5-10:grantyear2016   0.152327   0.386062   0.395 0.693165    
+tct_type10-15:grantyear2016 -0.410038   0.393997  -1.041 0.298015    
+tct_type>15:grantyear2016   -0.321130   0.398014  -0.807 0.419768    
+tct_type5-10:grantyear2017   0.301774   0.370660   0.814 0.415563    
+tct_type10-15:grantyear2017 -0.439575   0.387369  -1.135 0.256478    
+tct_type>15:grantyear2017   -0.195075   0.391238  -0.499 0.618058    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  1.10674    0.32217   3.435 0.000593 ***
+Y02T.101                    -0.19060    0.13564  -1.405 0.159974    
+Y02T.301                     0.52776    0.16051   3.288 0.001009 ** 
+Y02T.501                    -0.54981    0.15588  -3.527 0.000420 ***
+Y02T.701                     0.71650    0.16966   4.223 2.41e-05 ***
+Y02T.901                    -0.33373    0.06031  -5.533 3.16e-08 ***
+tct_type5-10                -1.45696    0.41630  -3.500 0.000466 ***
+tct_type10-15               -1.85552    0.31780  -5.839 5.30e-09 ***
+tct_type>15                 -1.21730    0.35239  -3.454 0.000552 ***
+grantyear2011               -0.98981    0.48931  -2.023 0.043095 *  
+grantyear2012               -0.66620    0.33352  -1.997 0.045778 *  
+grantyear2013               -2.11461    0.32675  -6.472 9.81e-11 ***
+grantyear2014               -2.00112    0.29385  -6.810 9.89e-12 ***
+grantyear2015               -1.76165    0.29133  -6.047 1.49e-09 ***
+grantyear2016               -2.37075    0.27766  -8.538  < 2e-16 ***
+grantyear2017               -1.91204    0.30657  -6.237 4.51e-10 ***
+organizational1              0.12656    0.08669   1.460 0.144326    
+claims_log                   0.08483    0.05274   1.608 0.107749    
+individual_inventors_log    -0.19771    0.04128  -4.789 1.68e-06 ***
+patent_citations_log        -0.01118    0.02470  -0.453 0.650823    
+research_citations_log       0.08558    0.03696   2.315 0.020607 *  
+other_citations_log          0.12637    0.03413   3.702 0.000214 ***
+tct_type5-10:grantyear2011   1.20933    0.64827   1.865 0.062122 .  
+tct_type10-15:grantyear2011  0.80034    0.56105   1.426 0.153732    
+tct_type>15:grantyear2011    0.44415    0.63250   0.702 0.482550    
+tct_type5-10:grantyear2012   0.10484    0.53651   0.195 0.845067    
+tct_type10-15:grantyear2012  1.08375    0.45314   2.392 0.016778 *  
+tct_type>15:grantyear2012    0.53635    0.46716   1.148 0.250931    
+tct_type5-10:grantyear2013   2.80243    0.49207   5.695 1.24e-08 ***
+tct_type10-15:grantyear2013  3.03211    0.40742   7.442 1.01e-13 ***
+tct_type>15:grantyear2013    1.58707    0.46006   3.450 0.000562 ***
+tct_type5-10:grantyear2014   0.90209    0.46474   1.941 0.052256 .  
+tct_type10-15:grantyear2014  1.49436    0.36758   4.065 4.80e-05 ***
+tct_type>15:grantyear2014    1.25397    0.41824   2.998 0.002717 ** 
+tct_type5-10:grantyear2015   1.37896    0.46139   2.989 0.002803 ** 
+tct_type10-15:grantyear2015  1.78289    0.37013   4.817 1.46e-06 ***
+tct_type>15:grantyear2015    1.27434    0.40283   3.163 0.001560 ** 
+tct_type5-10:grantyear2016   1.75016    0.45847   3.817 0.000135 ***
+tct_type10-15:grantyear2016  2.17320    0.35767   6.076 1.24e-09 ***
+tct_type>15:grantyear2016    1.53527    0.38514   3.986 6.72e-05 ***
+tct_type5-10:grantyear2017   1.50611    0.48350   3.115 0.001841 ** 
+tct_type10-15:grantyear2017  1.57967    0.40118   3.938 8.25e-05 ***
+tct_type>15:grantyear2017    0.78217    0.41457   1.887 0.059206 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  41832 
+Degrees of Freedom for the fit:  130
+      Residual Deg. of Freedom:  41702 
+                      at cycle:  10 
+ 
+Global Deviance:     123347.1 
+            AIC:     123607.1 
+            SBC:     124730.5 
+******************************************************************
+DONE summary Y02T 
+GAMLSS-RS iteration 8: Global Deviance = 160084.8 
+GAMLSS-RS iteration 9: Global Deviance = 160074.7 
+GAMLSS-RS iteration 3: Global Deviance = 224913.7 
+GAMLSS-RS iteration 2: Global Deviance = 222295.5 
+GAMLSS-RS iteration 10: Global Deviance = 160069.8 
+DONE fit Y02E 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.802147   0.090981  -8.817  < 2e-16 ***
+Y02E.101                     0.385083   0.039060   9.859  < 2e-16 ***
+Y02E.201                    -0.006412   0.050332  -0.127 0.898623    
+Y02E.301                    -0.781379   0.071872 -10.872  < 2e-16 ***
+Y02E.401                     0.302781   0.050174   6.035 1.60e-09 ***
+Y02E.501                     0.450164   0.047516   9.474  < 2e-16 ***
+Y02E.601                     0.058899   0.038476   1.531 0.125823    
+Y02E.701                     0.112909   0.049507   2.281 0.022572 *  
+tct_type5-10                -0.403280   0.079290  -5.086 3.66e-07 ***
+tct_type10-15               -0.362164   0.084228  -4.300 1.71e-05 ***
+tct_type>15                 -0.303392   0.082975  -3.656 0.000256 ***
+grantyear2011                0.117497   0.094128   1.248 0.211938    
+grantyear2012               -0.241646   0.088282  -2.737 0.006198 ** 
+grantyear2013               -0.221383   0.090842  -2.437 0.014812 *  
+grantyear2014               -0.429640   0.084414  -5.090 3.60e-07 ***
+grantyear2015               -0.738294   0.084682  -8.718  < 2e-16 ***
+grantyear2016               -0.706327   0.089746  -7.870 3.59e-15 ***
+grantyear2017               -1.123584   0.090494 -12.416  < 2e-16 ***
+aiai                         0.393727   0.079872   4.929 8.27e-07 ***
+organizational1             -0.038156   0.023379  -1.632 0.102666    
+claims_log                   0.230791   0.013903  16.600  < 2e-16 ***
+individual_inventors_log    -0.069707   0.012201  -5.713 1.11e-08 ***
+patent_citations_log         0.365762   0.007030  52.031  < 2e-16 ***
+research_citations_log       0.034180   0.008859   3.858 0.000114 ***
+other_citations_log          0.167102   0.009512  17.567  < 2e-16 ***
+tct_type5-10:grantyear2011   0.015753   0.111100   0.142 0.887243    
+tct_type10-15:grantyear2011 -0.087263   0.116011  -0.752 0.451936    
+tct_type>15:grantyear2011   -0.240765   0.116065  -2.074 0.038045 *  
+tct_type5-10:grantyear2012   0.284777   0.105821   2.691 0.007123 ** 
+tct_type10-15:grantyear2012 -0.075818   0.109103  -0.695 0.487106    
+tct_type>15:grantyear2012   -0.074139   0.108358  -0.684 0.493848    
+tct_type5-10:grantyear2013   0.156018   0.109156   1.429 0.152922    
+tct_type10-15:grantyear2013 -0.069812   0.112025  -0.623 0.533167    
+tct_type>15:grantyear2013   -0.389678   0.109770  -3.550 0.000386 ***
+tct_type5-10:grantyear2014   0.135822   0.105536   1.287 0.198106    
+tct_type10-15:grantyear2014 -0.063617   0.105381  -0.604 0.546053    
+tct_type>15:grantyear2014   -0.318817   0.104157  -3.061 0.002207 ** 
+tct_type5-10:grantyear2015   0.292137   0.106093   2.754 0.005896 ** 
+tct_type10-15:grantyear2015  0.161219   0.106266   1.517 0.129238    
+tct_type>15:grantyear2015   -0.202797   0.105039  -1.931 0.053525 .  
+tct_type5-10:grantyear2016   0.306298   0.109805   2.789 0.005281 ** 
+tct_type10-15:grantyear2016  0.169105   0.110753   1.527 0.126797    
+tct_type>15:grantyear2016   -0.180267   0.108566  -1.660 0.096830 .  
+tct_type5-10:grantyear2017   0.186865   0.112958   1.654 0.098073 .  
+tct_type10-15:grantyear2017  0.029800   0.112970   0.264 0.791944    
+tct_type>15:grantyear2017   -0.420191   0.110181  -3.814 0.000137 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  2.29997    0.23758   9.681  < 2e-16 ***
+Y02E.101                    -0.20435    0.10048  -2.034 0.041990 *  
+Y02E.201                    -0.61807    0.11927  -5.182 2.20e-07 ***
+Y02E.301                    -0.91851    0.19296  -4.760 1.94e-06 ***
+Y02E.401                    -0.22245    0.16071  -1.384 0.166321    
+Y02E.501                     0.19572    0.10884   1.798 0.072149 .  
+Y02E.601                     0.08795    0.09874   0.891 0.373081    
+Y02E.701                    -1.25980    0.13563  -9.288  < 2e-16 ***
+tct_type5-10                 0.64974    0.19676   3.302 0.000960 ***
+tct_type10-15                1.14496    0.20495   5.587 2.32e-08 ***
+tct_type>15                  1.78972    0.26232   6.823 9.01e-12 ***
+grantyear2011                1.71829    0.37840   4.541 5.61e-06 ***
+grantyear2012                0.21086    0.22721   0.928 0.353391    
+grantyear2013                0.86710    0.21429   4.046 5.21e-05 ***
+grantyear2014                1.18302    0.24734   4.783 1.73e-06 ***
+grantyear2015                1.01709    0.22057   4.611 4.01e-06 ***
+grantyear2016                0.98537    0.22400   4.399 1.09e-05 ***
+grantyear2017                1.37934    0.22786   6.053 1.43e-09 ***
+organizational1             -0.23666    0.06734  -3.515 0.000441 ***
+claims_log                  -0.39808    0.04031  -9.876  < 2e-16 ***
+individual_inventors_log    -0.20118    0.03172  -6.341 2.29e-10 ***
+patent_citations_log        -0.01659    0.01894  -0.876 0.381053    
+research_citations_log      -0.01322    0.02037  -0.649 0.516201    
+other_citations_log          0.03764    0.02365   1.591 0.111534    
+tct_type5-10:grantyear2011  -1.53407    0.39963  -3.839 0.000124 ***
+tct_type10-15:grantyear2011 -1.62293    0.40869  -3.971 7.16e-05 ***
+tct_type>15:grantyear2011   -2.38864    0.44484  -5.370 7.91e-08 ***
+tct_type5-10:grantyear2012  -0.24932    0.25771  -0.967 0.333336    
+tct_type10-15:grantyear2012 -0.77917    0.26663  -2.922 0.003476 ** 
+tct_type>15:grantyear2012   -1.16195    0.31759  -3.659 0.000254 ***
+tct_type5-10:grantyear2013  -0.30149    0.26894  -1.121 0.262285    
+tct_type10-15:grantyear2013 -0.68374    0.26176  -2.612 0.009000 ** 
+tct_type>15:grantyear2013   -1.63030    0.31842  -5.120 3.06e-07 ***
+tct_type5-10:grantyear2014  -0.36871    0.30703  -1.201 0.229795    
+tct_type10-15:grantyear2014 -1.24122    0.28539  -4.349 1.37e-05 ***
+tct_type>15:grantyear2014   -1.56171    0.33637  -4.643 3.44e-06 ***
+tct_type5-10:grantyear2015  -0.36856    0.29544  -1.247 0.212219    
+tct_type10-15:grantyear2015 -0.99294    0.26042  -3.813 0.000138 ***
+tct_type>15:grantyear2015   -1.44118    0.31748  -4.539 5.65e-06 ***
+tct_type5-10:grantyear2016  -0.20811    0.28133  -0.740 0.459451    
+tct_type10-15:grantyear2016 -0.28986    0.27420  -1.057 0.290467    
+tct_type>15:grantyear2016   -0.87442    0.31557  -2.771 0.005592 ** 
+tct_type5-10:grantyear2017  -0.64386    0.29498  -2.183 0.029058 *  
+tct_type10-15:grantyear2017 -0.73241    0.29574  -2.477 0.013269 *  
+tct_type>15:grantyear2017   -1.51632    0.32877  -4.612 3.99e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.3648048  0.3272088  -1.115 0.264898    
+Y02E.101                    -0.2083063  0.0754542  -2.761 0.005769 ** 
+Y02E.201                     0.1326535  0.1092472   1.214 0.224656    
+Y02E.301                     0.2904834  0.2601369   1.117 0.264146    
+Y02E.401                    -0.2843000  0.0975678  -2.914 0.003571 ** 
+Y02E.501                     0.1036203  0.0818124   1.267 0.205317    
+Y02E.601                     0.0003407  0.0749957   0.005 0.996376    
+Y02E.701                     0.4626444  0.2514944   1.840 0.065834 .  
+tct_type5-10                -0.7409109  0.3335808  -2.221 0.026349 *  
+tct_type10-15               -0.8499750  0.3209721  -2.648 0.008096 ** 
+tct_type>15                 -1.1146070  0.3153537  -3.534 0.000409 ***
+grantyear2011               -1.1872298  0.3201426  -3.708 0.000209 ***
+grantyear2012               -0.6854270  0.4101941  -1.671 0.094730 .  
+grantyear2013               -0.7103234  0.3379887  -2.102 0.035590 *  
+grantyear2014               -1.1379726  0.3230485  -3.523 0.000428 ***
+grantyear2015               -1.1127491  0.3272930  -3.400 0.000675 ***
+grantyear2016               -0.8183779  0.3289291  -2.488 0.012849 *  
+grantyear2017               -0.9853096  0.3232138  -3.048 0.002301 ** 
+organizational1              0.0156668  0.0348784   0.449 0.653302    
+claims_log                   0.0872665  0.0219481   3.976 7.01e-05 ***
+individual_inventors_log     0.0397243  0.0195153   2.036 0.041799 *  
+patent_citations_log        -0.0371258  0.0109269  -3.398 0.000680 ***
+research_citations_log       0.1802232  0.0125406  14.371  < 2e-16 ***
+other_citations_log          0.0820669  0.0140834   5.827 5.66e-09 ***
+tct_type5-10:grantyear2011   0.9965917  0.3497942   2.849 0.004386 ** 
+tct_type10-15:grantyear2011  1.0190039  0.3359416   3.033 0.002420 ** 
+tct_type>15:grantyear2011    1.3381993  0.3343968   4.002 6.29e-05 ***
+tct_type5-10:grantyear2012   0.7094579  0.4385160   1.618 0.105697    
+tct_type10-15:grantyear2012  0.6701887  0.4324895   1.550 0.121241    
+tct_type>15:grantyear2012    0.8283845  0.4224854   1.961 0.049913 *  
+tct_type5-10:grantyear2013   0.3585675  0.3669189   0.977 0.328454    
+tct_type10-15:grantyear2013  0.6296564  0.3528357   1.785 0.074337 .  
+tct_type>15:grantyear2013    0.6144068  0.3508604   1.751 0.079926 .  
+tct_type5-10:grantyear2014   0.7086117  0.3522552   2.012 0.044262 *  
+tct_type10-15:grantyear2014  1.0220484  0.3392911   3.012 0.002594 ** 
+tct_type>15:grantyear2014    1.1252897  0.3324690   3.385 0.000713 ***
+tct_type5-10:grantyear2015   0.6448879  0.3581041   1.801 0.071733 .  
+tct_type10-15:grantyear2015  1.2321313  0.3433413   3.589 0.000333 ***
+tct_type>15:grantyear2015    1.1880949  0.3375764   3.519 0.000433 ***
+tct_type5-10:grantyear2016   0.3864844  0.3573160   1.082 0.279420    
+tct_type10-15:grantyear2016  0.5587879  0.3416136   1.636 0.101901    
+tct_type>15:grantyear2016    0.7826724  0.3361418   2.328 0.019894 *  
+tct_type5-10:grantyear2017   0.5145835  0.3565894   1.443 0.149005    
+tct_type10-15:grantyear2017  0.6705257  0.3373974   1.987 0.046888 *  
+tct_type>15:grantyear2017    0.8989605  0.3333078   2.697 0.006997 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  66103 
+Degrees of Freedom for the fit:  136
+      Residual Deg. of Freedom:  65967 
+                      at cycle:  10 
+ 
+Global Deviance:     160069.8 
+            AIC:     160341.8 
+            SBC:     161579.3 
+******************************************************************
+DONE summary Y02E 
+GAMLSS-RS iteration 4: Global Deviance = 224725.7 
+GAMLSS-RS iteration 3: Global Deviance = 221547.2 
+GAMLSS-RS iteration 5: Global Deviance = 224690.3 
+GAMLSS-RS iteration 4: Global Deviance = 221215.2 
+GAMLSS-RS iteration 6: Global Deviance = 224675.1 
+GAMLSS-RS iteration 5: Global Deviance = 221090.9 
+Fitting model for electricity 
+GAMLSS-RS iteration 7: Global Deviance = 224666 
+electricity : before removing NAs 826019 95 
+electricity : after removing NAs 826003 95 
+electricity 75000 101 
+GAMLSS-RS iteration 8: Global Deviance = 224658.9 
+Fitting model for transport 
+transport : before removing NAs 118143 89 
+transport : after removing NAs 118142 89 
+Fitting model for electricity 
+transport 75000 95 
+electricity : before removing NAs 826019 95 
+electricity : after removing NAs 826003 95 
+electricity 75000 101 
+GAMLSS-RS iteration 1: Global Deviance = 229379.3 
+GAMLSS-RS iteration 1: Global Deviance = 223374.4 
+GAMLSS-RS iteration 2: Global Deviance = 226027.2 
+GAMLSS-RS iteration 3: Global Deviance = 225043.4 
+GAMLSS-RS iteration 2: Global Deviance = 221507.5 
+Fitting model for electricity 
+electricity : before removing NAs 826019 95 
+GAMLSS-RS iteration 4: Global Deviance = 224859.5 
+electricity : after removing NAs 826003 95 
+Fitting model for transport 
+transport : before removing NAs 118143 89 
+transport : after removing NAs 118142 89 
+transport 75000 95 
+electricity 75000 101 
+GAMLSS-RS iteration 1: Global Deviance = 224435.6 
+GAMLSS-RS iteration 1: Global Deviance = 228277.5 
+GAMLSS-RS iteration 2: Global Deviance = 222705.1 
+GAMLSS-RS iteration 2: Global Deviance = 225169.3 
+GAMLSS-RS iteration 3: Global Deviance = 224397.6 
+GAMLSS-RS iteration 4: Global Deviance = 224281.2 
+GAMLSS-RS iteration 3: Global Deviance = 222009.8 
+GAMLSS-RS iteration 5: Global Deviance = 224256.4 
+GAMLSS-RS iteration 6: Global Deviance = 224244.1 
+GAMLSS-RS iteration 7: Global Deviance = 224236.6 
+GAMLSS-RS iteration 8: Global Deviance = 224231.5 
+GAMLSS-RS iteration 9: Global Deviance = 224227.8 
+GAMLSS-RS iteration 4: Global Deviance = 221753.6 
+GAMLSS-RS iteration 10: Global Deviance = 224225 
+DONE fit transport 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -0.903133   0.058444 -15.453  < 2e-16 ***
+subclass_B60B1               0.060707   0.041665   1.457 0.145111    
+subclass_B60C1              -0.307229   0.035168  -8.736  < 2e-16 ***
+subclass_B60D1               0.037101   0.058607   0.633 0.526703    
+subclass_B60F1               0.270525   0.133404   2.028 0.042578 *  
+subclass_B60G1               0.225332   0.031358   7.186 6.74e-13 ***
+subclass_B60H1              -0.161035   0.041916  -3.842 0.000122 ***
+subclass_B60J1              -0.058577   0.032715  -1.791 0.073371 .  
+subclass_B60K1               0.177183   0.019206   9.226  < 2e-16 ***
+subclass_B60L1               0.424062   0.020007  21.195  < 2e-16 ***
+subclass_B60M1              -0.072757   0.126383  -0.576 0.564831    
+subclass_B60N1               0.230820   0.022536  10.242  < 2e-16 ***
+subclass_B60P1               0.086691   0.032649   2.655 0.007927 ** 
+subclass_B60Q1               0.185792   0.030125   6.167 6.98e-10 ***
+subclass_B60R1               0.277613   0.017024  16.308  < 2e-16 ***
+subclass_B60S1              -0.074416   0.052714  -1.412 0.158045    
+subclass_B60T1              -0.188526   0.026996  -6.983 2.90e-12 ***
+subclass_B60W1               0.213056   0.020713  10.286  < 2e-16 ***
+subclass_B60Y1              -0.025274   0.031767  -0.796 0.426254    
+subclass_B61B1              -0.158607   0.100592  -1.577 0.114859    
+subclass_B61C1              -0.090324   0.098095  -0.921 0.357165    
+subclass_B61D1              -0.239829   0.076957  -3.116 0.001832 ** 
+subclass_B61F1              -0.367626   0.116280  -3.162 0.001570 ** 
+subclass_B61G1              -0.052349   0.118764  -0.441 0.659374    
+subclass_B61H1              -0.212995   0.150557  -1.415 0.157158    
+subclass_B61K1              -0.163022   0.133526  -1.221 0.222129    
+subclass_B61L1               0.082530   0.061999   1.331 0.183139    
+subclass_B62B1               0.394259   0.032653  12.074  < 2e-16 ***
+subclass_B62D1               0.247494   0.018380  13.466  < 2e-16 ***
+subclass_B62H1              -0.087389   0.101917  -0.857 0.391199    
+subclass_B62J1              -0.086129   0.041325  -2.084 0.037147 *  
+subclass_B62K1               0.166865   0.032649   5.111 3.21e-07 ***
+subclass_B62L1              -0.239189   0.097893  -2.443 0.014553 *  
+subclass_B62M1               0.237895   0.041111   5.787 7.21e-09 ***
+subclass_B63B1              -0.032743   0.032374  -1.011 0.311820    
+subclass_B63C1              -0.236671   0.063550  -3.724 0.000196 ***
+subclass_B63G1              -0.180852   0.087288  -2.072 0.038278 *  
+subclass_B63H1              -0.049613   0.046537  -1.066 0.286381    
+subclass_B63J1              -0.376969   0.125114  -3.013 0.002588 ** 
+subclass_B64B1               0.476954   0.115062   4.145 3.40e-05 ***
+subclass_B64C1               0.381159   0.026606  14.326  < 2e-16 ***
+subclass_B64D1               0.030452   0.024812   1.227 0.219707    
+subclass_B64F1              -0.066231   0.048556  -1.364 0.172565    
+subclass_B64G1              -0.153280   0.053139  -2.885 0.003921 ** 
+tct_type5-10                -0.254265   0.054709  -4.648 3.36e-06 ***
+tct_type10-15               -0.458285   0.058675  -7.811 5.77e-15 ***
+tct_type>15                 -0.606233   0.059181 -10.244  < 2e-16 ***
+grantyear2011               -0.089343   0.065163  -1.371 0.170357    
+grantyear2012               -0.035862   0.066857  -0.536 0.591686    
+grantyear2013               -0.110909   0.064753  -1.713 0.086753 .  
+grantyear2014               -0.089278   0.064722  -1.379 0.167775    
+grantyear2015               -0.097550   0.063321  -1.541 0.123428    
+grantyear2016               -0.090764   0.062845  -1.444 0.148677    
+grantyear2017               -0.686121   0.063287 -10.841  < 2e-16 ***
+aiai                         0.570624   0.026160  21.813  < 2e-16 ***
+organizational1              0.064754   0.015666   4.133 3.58e-05 ***
+claims_log                   0.247214   0.009963  24.813  < 2e-16 ***
+individual_inventors_log     0.067633   0.009385   7.207 5.78e-13 ***
+patent_citations_log         0.259196   0.005768  44.939  < 2e-16 ***
+research_citations_log       0.178491   0.013503  13.218  < 2e-16 ***
+other_citations_log          0.078828   0.007458  10.569  < 2e-16 ***
+tct_type5-10:grantyear2011   0.083774   0.075832   1.105 0.269283    
+tct_type10-15:grantyear2011  0.285013   0.080147   3.556 0.000377 ***
+tct_type>15:grantyear2011    0.121000   0.079751   1.517 0.129213    
+tct_type5-10:grantyear2012   0.050389   0.077634   0.649 0.516302    
+tct_type10-15:grantyear2012  0.198060   0.080562   2.458 0.013954 *  
+tct_type>15:grantyear2012    0.063512   0.080968   0.784 0.432800    
+tct_type5-10:grantyear2013   0.214273   0.076312   2.808 0.004989 ** 
+tct_type10-15:grantyear2013  0.186853   0.078295   2.387 0.017011 *  
+tct_type>15:grantyear2013    0.146407   0.078077   1.875 0.060774 .  
+tct_type5-10:grantyear2014   0.055351   0.077646   0.713 0.475931    
+tct_type10-15:grantyear2014  0.068711   0.078289   0.878 0.380133    
+tct_type>15:grantyear2014   -0.008429   0.078459  -0.107 0.914452    
+tct_type5-10:grantyear2015  -0.046826   0.076187  -0.615 0.538809    
+tct_type10-15:grantyear2015  0.020834   0.077256   0.270 0.787411    
+tct_type>15:grantyear2015   -0.064788   0.076819  -0.843 0.399012    
+tct_type5-10:grantyear2016  -0.019985   0.076528  -0.261 0.793978    
+tct_type10-15:grantyear2016 -0.032525   0.077034  -0.422 0.672869    
+tct_type>15:grantyear2016   -0.041059   0.075650  -0.543 0.587308    
+tct_type5-10:grantyear2017  -0.010753   0.077150  -0.139 0.889156    
+tct_type10-15:grantyear2017  0.096953   0.078066   1.242 0.214266    
+tct_type>15:grantyear2017    0.046129   0.076021   0.607 0.543989    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  0.27199    0.20282   1.341 0.179913    
+subclass_B60B1              -0.11722    0.12757  -0.919 0.358159    
+subclass_B60C1               0.17627    0.09833   1.793 0.073036 .  
+subclass_B60D1               0.58952    0.27697   2.128 0.033304 *  
+subclass_B60F1               0.26023    0.55979   0.465 0.642030    
+subclass_B60G1               0.25702    0.15009   1.712 0.086826 .  
+subclass_B60H1              -0.21380    0.15797  -1.353 0.175930    
+subclass_B60J1              -0.37630    0.13921  -2.703 0.006869 ** 
+subclass_B60K1               0.21984    0.07287   3.017 0.002554 ** 
+subclass_B60L1               0.59370    0.07578   7.834 4.78e-15 ***
+subclass_B60M1              -0.26938    0.37393  -0.720 0.471278    
+subclass_B60N1              -0.01274    0.08803  -0.145 0.884969    
+subclass_B60P1              -0.50872    0.10140  -5.017 5.27e-07 ***
+subclass_B60Q1               0.57988    0.08403   6.901 5.22e-12 ***
+subclass_B60R1               0.05451    0.05145   1.059 0.289391    
+subclass_B60S1               0.09797    0.14085   0.696 0.486686    
+subclass_B60T1               0.23005    0.13798   1.667 0.095462 .  
+subclass_B60W1               0.19414    0.06833   2.841 0.004498 ** 
+subclass_B60Y1              -0.40984    0.10914  -3.755 0.000173 ***
+subclass_B61B1               0.99672    0.41766   2.386 0.017014 *  
+subclass_B61C1               2.40981    1.67938   1.435 0.151309    
+subclass_B61D1               1.76531    0.81951   2.154 0.031234 *  
+subclass_B61F1              -0.08713    0.46587  -0.187 0.851646    
+subclass_B61G1              -1.08802    0.63101  -1.724 0.084664 .  
+subclass_B61H1              -1.20730    0.64905  -1.860 0.062874 .  
+subclass_B61K1              -0.99103    0.46036  -2.153 0.031345 *  
+subclass_B61L1               0.93232    0.32175   2.898 0.003761 ** 
+subclass_B62B1              -0.58651    0.10413  -5.633 1.78e-08 ***
+subclass_B62D1              -0.19487    0.05697  -3.421 0.000625 ***
+subclass_B62H1              -0.35695    0.31143  -1.146 0.251740    
+subclass_B62J1              -0.70122    0.20954  -3.346 0.000819 ***
+subclass_B62K1               1.43414    0.27578   5.200 1.99e-07 ***
+subclass_B62L1              -2.11210    0.47045  -4.490 7.15e-06 ***
+subclass_B62M1               0.20454    0.15464   1.323 0.185944    
+subclass_B63B1              -0.16300    0.12617  -1.292 0.196376    
+subclass_B63C1              -0.48961    0.20680  -2.368 0.017907 *  
+subclass_B63G1               1.02774    0.76751   1.339 0.180553    
+subclass_B63H1               0.27176    0.17484   1.554 0.120095    
+subclass_B63J1              -0.12421    0.36451  -0.341 0.733293    
+subclass_B64B1               0.54514    0.37377   1.458 0.144710    
+subclass_B64C1               0.58114    0.08402   6.916 4.67e-12 ***
+subclass_B64D1              -0.27073    0.08220  -3.294 0.000990 ***
+subclass_B64F1              -0.39534    0.14923  -2.649 0.008068 ** 
+subclass_B64G1               0.28726    0.36556   0.786 0.431989    
+tct_type5-10                 0.78186    0.19524   4.005 6.22e-05 ***
+tct_type10-15                1.19506    0.27596   4.331 1.49e-05 ***
+tct_type>15                  1.83105    0.29705   6.164 7.13e-10 ***
+grantyear2011                0.77542    0.46879   1.654 0.098116 .  
+grantyear2012                0.48209    0.25436   1.895 0.058060 .  
+grantyear2013                0.16379    0.19939   0.821 0.411387    
+grantyear2014                0.55418    0.19108   2.900 0.003730 ** 
+grantyear2015                0.92150    0.18955   4.862 1.17e-06 ***
+grantyear2016                0.83284    0.18322   4.546 5.49e-06 ***
+grantyear2017                0.71366    0.19003   3.756 0.000173 ***
+organizational1              0.16349    0.05793   2.822 0.004771 ** 
+claims_log                   0.03665    0.03485   1.052 0.292989    
+individual_inventors_log    -0.02663    0.03244  -0.821 0.411802    
+patent_citations_log        -0.25883    0.02043 -12.668  < 2e-16 ***
+research_citations_log       0.15020    0.03288   4.568 4.94e-06 ***
+other_citations_log          0.12927    0.02299   5.624 1.87e-08 ***
+tct_type5-10:grantyear2011  -1.23875    0.49463  -2.504 0.012267 *  
+tct_type10-15:grantyear2011 -0.90048    0.54265  -1.659 0.097036 .  
+tct_type>15:grantyear2011   -2.10397    0.55143  -3.815 0.000136 ***
+tct_type5-10:grantyear2012  -0.45214    0.31840  -1.420 0.155594    
+tct_type10-15:grantyear2012 -0.78852    0.35978  -2.192 0.028407 *  
+tct_type>15:grantyear2012   -1.42947    0.37343  -3.828 0.000129 ***
+tct_type5-10:grantyear2013  -0.38515    0.24454  -1.575 0.115258    
+tct_type10-15:grantyear2013 -0.32178    0.32126  -1.002 0.316537    
+tct_type>15:grantyear2013   -1.12904    0.34580  -3.265 0.001095 ** 
+tct_type5-10:grantyear2014  -0.52469    0.23636  -2.220 0.026428 *  
+tct_type10-15:grantyear2014 -0.68847    0.30795  -2.236 0.025380 *  
+tct_type>15:grantyear2014   -1.46831    0.32298  -4.546 5.47e-06 ***
+tct_type5-10:grantyear2015  -0.79075    0.23380  -3.382 0.000719 ***
+tct_type10-15:grantyear2015 -1.09870    0.30436  -3.610 0.000307 ***
+tct_type>15:grantyear2015   -1.53168    0.32086  -4.774 1.81e-06 ***
+tct_type5-10:grantyear2016  -0.57158    0.22757  -2.512 0.012019 *  
+tct_type10-15:grantyear2016 -0.81392    0.30271  -2.689 0.007173 ** 
+tct_type>15:grantyear2016   -1.41399    0.31505  -4.488 7.19e-06 ***
+tct_type5-10:grantyear2017  -0.73556    0.24283  -3.029 0.002453 ** 
+tct_type10-15:grantyear2017 -1.01693    0.30927  -3.288 0.001009 ** 
+tct_type>15:grantyear2017   -1.23309    0.32979  -3.739 0.000185 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -1.720579   0.317882  -5.413 6.23e-08 ***
+subclass_B60B1               0.229492   0.147634   1.554  0.12008    
+subclass_B60C1               0.883860   0.098474   8.976  < 2e-16 ***
+subclass_B60D1              -0.194890   0.149180  -1.306  0.19142    
+subclass_B60F1               1.721143   0.259508   6.632 3.33e-11 ***
+subclass_B60G1              -0.142098   0.087855  -1.617  0.10579    
+subclass_B60H1               0.137543   0.167227   0.822  0.41080    
+subclass_B60J1              -0.210975   0.184509  -1.143  0.25286    
+subclass_B60K1              -0.108094   0.049957  -2.164  0.03049 *  
+subclass_B60L1               0.036598   0.043530   0.841  0.40048    
+subclass_B60M1               1.405221   0.243336   5.775 7.73e-09 ***
+subclass_B60N1              -0.223679   0.082152  -2.723  0.00648 ** 
+subclass_B60P1               0.451462   0.227190   1.987  0.04691 *  
+subclass_B60Q1               0.171988   0.062535   2.750  0.00596 ** 
+subclass_B60R1               0.395885   0.048980   8.083 6.43e-16 ***
+subclass_B60S1               1.195951   0.171118   6.989 2.79e-12 ***
+subclass_B60T1              -0.259728   0.080425  -3.229  0.00124 ** 
+subclass_B60W1               0.148195   0.049391   3.000  0.00270 ** 
+subclass_B60Y1               0.074582   0.103076   0.724  0.46934    
+subclass_B61B1              -0.026655   0.182330  -0.146  0.88377    
+subclass_B61C1              -0.640421   0.152239  -4.207 2.59e-05 ***
+subclass_B61D1               2.074136   0.120035  17.279  < 2e-16 ***
+subclass_B61F1               0.299360   0.312479   0.958  0.33806    
+subclass_B61G1              -0.466001   1.199560  -0.388  0.69766    
+subclass_B61H1               1.446647   1.172787   1.234  0.21739    
+subclass_B61K1               1.204209   0.711035   1.694  0.09035 .  
+subclass_B61L1              -0.073905   0.116490  -0.634  0.52580    
+subclass_B62B1               0.419885   0.200262   2.097  0.03603 *  
+subclass_B62D1               0.235035   0.058828   3.995 6.47e-05 ***
+subclass_B62H1               0.674347   0.299426   2.252  0.02432 *  
+subclass_B62J1              -0.136719   0.147109  -0.929  0.35270    
+subclass_B62K1              -0.452265   0.085250  -5.305 1.13e-07 ***
+subclass_B62L1               1.520258   1.342267   1.133  0.25738    
+subclass_B62M1               0.202249   0.103246   1.959  0.05013 .  
+subclass_B63B1               0.117567   0.123218   0.954  0.34002    
+subclass_B63C1               1.192191   0.388070   3.072  0.00213 ** 
+subclass_B63G1              -0.932372   0.234537  -3.975 7.03e-05 ***
+subclass_B63H1               0.126014   0.138677   0.909  0.36352    
+subclass_B63J1               0.934327   0.350834   2.663  0.00774 ** 
+subclass_B64B1               1.455377   0.202974   7.170 7.55e-13 ***
+subclass_B64C1               0.193173   0.060359   3.200  0.00137 ** 
+subclass_B64D1               0.169219   0.080782   2.095  0.03620 *  
+subclass_B64F1               0.174346   0.153180   1.138  0.25505    
+subclass_B64G1              -0.328795   0.159195  -2.065  0.03889 *  
+tct_type5-10                -0.399836   0.312697  -1.279  0.20102    
+tct_type10-15               -0.685121   0.320240  -2.139  0.03241 *  
+tct_type>15                 -0.664752   0.311831  -2.132  0.03303 *  
+grantyear2011               -0.863102   0.352297  -2.450  0.01429 *  
+grantyear2012               -0.232553   0.338994  -0.686  0.49271    
+grantyear2013                0.399177   0.356617   1.119  0.26300    
+grantyear2014                0.461030   0.329534   1.399  0.16181    
+grantyear2015                0.541948   0.310113   1.748  0.08054 .  
+grantyear2016                0.392166   0.308336   1.272  0.20342    
+grantyear2017                0.311630   0.318390   0.979  0.32770    
+organizational1              0.127781   0.056198   2.274  0.02298 *  
+claims_log                   0.041261   0.031643   1.304  0.19226    
+individual_inventors_log    -0.081735   0.026584  -3.075  0.00211 ** 
+patent_citations_log         0.127479   0.017036   7.483 7.34e-14 ***
+research_citations_log       0.184568   0.024977   7.390 1.49e-13 ***
+other_citations_log          0.000805   0.020169   0.040  0.96816    
+tct_type5-10:grantyear2011   0.806471   0.394248   2.046  0.04080 *  
+tct_type10-15:grantyear2011  1.029278   0.386244   2.665  0.00770 ** 
+tct_type>15:grantyear2011    0.838328   0.399911   2.096  0.03606 *  
+tct_type5-10:grantyear2012   0.103201   0.367288   0.281  0.77873    
+tct_type10-15:grantyear2012  0.508573   0.372915   1.364  0.17264    
+tct_type>15:grantyear2012    0.477505   0.367178   1.300  0.19344    
+tct_type5-10:grantyear2013   0.037263   0.384296   0.097  0.92275    
+tct_type10-15:grantyear2013 -0.071384   0.384831  -0.185  0.85284    
+tct_type>15:grantyear2013   -0.321648   0.381355  -0.843  0.39899    
+tct_type5-10:grantyear2014   0.097154   0.355951   0.273  0.78490    
+tct_type10-15:grantyear2014 -0.019962   0.358171  -0.056  0.95555    
+tct_type>15:grantyear2014    0.237720   0.352995   0.673  0.50067    
+tct_type5-10:grantyear2015  -0.030697   0.335516  -0.091  0.92710    
+tct_type10-15:grantyear2015  0.203809   0.340469   0.599  0.54943    
+tct_type>15:grantyear2015    0.129936   0.330001   0.394  0.69377    
+tct_type5-10:grantyear2016   0.207414   0.331243   0.626  0.53121    
+tct_type10-15:grantyear2016  0.198263   0.336603   0.589  0.55586    
+tct_type>15:grantyear2016    0.247545   0.326826   0.757  0.44880    
+tct_type5-10:grantyear2017   0.103001   0.349749   0.295  0.76838    
+tct_type10-15:grantyear2017  0.233852   0.353071   0.662  0.50776    
+tct_type>15:grantyear2017   -0.030561   0.337588  -0.091  0.92787    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  75000 
+Degrees of Freedom for the fit:  244
+      Residual Deg. of Freedom:  74756 
+                      at cycle:  10 
+ 
+Global Deviance:     224225 
+            AIC:     224713 
+            SBC:     226964 
+******************************************************************
+DONE summary transport 
+GAMLSS-RS iteration 5: Global Deviance = 221683.3 
+GAMLSS-RS iteration 6: Global Deviance = 221662.7 
+GAMLSS-RS iteration 7: Global Deviance = 221656.1 
+GAMLSS-RS iteration 8: Global Deviance = 221653.6 
+GAMLSS-RS iteration 9: Global Deviance = 221651.2 
+GAMLSS-RS iteration 10: Global Deviance = 221649.7 
+DONE fit electricity 
+******************************************************************
+Family:  c("SICHEL", "Sichel") 
+
+Call:  gamlss(formula = modelformula, sigma.formula = modelformula.LSS,      nu.formula = modelformula.LSS, family = SICHEL, data = subclass,  
+    n.cyc = ncyc, trace = TRUE, c.crit = 0.05) 
+
+Fitting method: RS() 
+
+------------------------------------------------------------------
+Mu link function:  log
+Mu Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -1.3005331  0.0578430 -22.484  < 2e-16 ***
+subclass_H01B1              -0.3191016  0.0850626  -3.751 0.000176 ***
+subclass_H01C1              -0.3503904  0.1826979  -1.918 0.055132 .  
+subclass_H01F1              -0.0817482  0.0621377  -1.316 0.188314    
+subclass_H01G1              -0.1419798  0.0831192  -1.708 0.087613 .  
+subclass_H01H1              -0.0810835  0.0671411  -1.208 0.227182    
+subclass_H01J1               0.1393716  0.0518705   2.687 0.007213 ** 
+subclass_H01K1              -0.0402215  1.0498512  -0.038 0.969439    
+subclass_H01L1               0.0988841  0.0213631   4.629 3.69e-06 ***
+subclass_H01M1              -0.4021058  0.0477564  -8.420  < 2e-16 ***
+subclass_H01P1               0.1387954  0.1173683   1.183 0.236986    
+subclass_H01Q1               0.1886828  0.0540234   3.493 0.000479 ***
+subclass_H01R1               0.5770970  0.0349388  16.517  < 2e-16 ***
+subclass_H01S1              -0.3015301  0.0721213  -4.181 2.91e-05 ***
+subclass_H01T1              -0.0330920  0.1441821  -0.230 0.818469    
+subclass_H02B1               0.1983560  0.1109356   1.788 0.073775 .  
+subclass_H02G1               0.0158912  0.0717209   0.222 0.824649    
+subclass_H02H1              -0.1370142  0.1023604  -1.339 0.180722    
+subclass_H02J1               0.5907761  0.0430421  13.726  < 2e-16 ***
+subclass_H02K1              -0.1838019  0.0569574  -3.227 0.001251 ** 
+subclass_H02M1               0.1849711  0.0429335   4.308 1.65e-05 ***
+subclass_H02N1              -0.1258302  0.1102363  -1.141 0.253682    
+subclass_H02P1              -0.0447641  0.0632402  -0.708 0.479045    
+subclass_H02S1               0.3106999  0.1031613   3.012 0.002598 ** 
+subclass_H03B1              -0.3058906  0.1035499  -2.954 0.003137 ** 
+subclass_H03C1               0.1055105  0.1938555   0.544 0.586255    
+subclass_H03D1              -0.3476796  0.1389573  -2.502 0.012349 *  
+subclass_H03F1               0.0216936  0.0631369   0.344 0.731151    
+subclass_H03G1               0.1722293  0.0998439   1.725 0.084534 .  
+subclass_H03H1               0.2028942  0.0765455   2.651 0.008036 ** 
+subclass_H03J1               0.1587990  0.1982459   0.801 0.423122    
+subclass_H03K1              -0.1346836  0.0426811  -3.156 0.001602 ** 
+subclass_H03L1              -0.0434438  0.0642118  -0.677 0.498680    
+subclass_H03M1               0.3698320  0.0500005   7.397 1.41e-13 ***
+subclass_H04B1               0.1063298  0.0278679   3.815 0.000136 ***
+subclass_H04H1              -0.2441504  0.0822732  -2.968 0.003003 ** 
+subclass_H04J1               0.0266917  0.0558287   0.478 0.632581    
+subclass_H04K1               0.1915738  0.1478127   1.296 0.194959    
+subclass_H04L1               0.1752417  0.0199744   8.773  < 2e-16 ***
+subclass_H04M1               0.2078372  0.0319748   6.500 8.08e-11 ***
+subclass_H04N1               0.1318325  0.0237707   5.546 2.93e-08 ***
+subclass_H04Q1               0.1639137  0.0757860   2.163 0.030556 *  
+subclass_H04R1               0.1543027  0.0481065   3.208 0.001339 ** 
+subclass_H04S1               0.5150406  0.1154886   4.460 8.22e-06 ***
+subclass_H04W1               0.2574933  0.0223415  11.525  < 2e-16 ***
+subclass_H05B1               0.3012833  0.0471802   6.386 1.71e-10 ***
+subclass_H05F1              -0.1381633  0.3460801  -0.399 0.689730    
+subclass_H05G1               0.3747904  0.1547918   2.421 0.015469 *  
+subclass_H05H1              -0.0254720  0.1354597  -0.188 0.850845    
+subclass_H05K1               0.1441463  0.0333914   4.317 1.58e-05 ***
+tct_type5-10                -0.1427593  0.0460589  -3.099 0.001939 ** 
+tct_type10-15               -0.3529946  0.0608392  -5.802 6.58e-09 ***
+tct_type>15                 -0.5251792  0.0857080  -6.128 8.97e-10 ***
+grantyear2011                0.0419335  0.0535261   0.783 0.433382    
+grantyear2012                0.0688473  0.0520845   1.322 0.186226    
+grantyear2013               -0.0537418  0.0523582  -1.026 0.304694    
+grantyear2014               -0.0435410  0.0527943  -0.825 0.409528    
+grantyear2015               -0.2284384  0.0545586  -4.187 2.83e-05 ***
+grantyear2016               -0.2140928  0.0522700  -4.096 4.21e-05 ***
+grantyear2017               -0.7503372  0.0543027 -13.818  < 2e-16 ***
+aiai                         0.3910640  0.0405416   9.646  < 2e-16 ***
+organizational1              0.0498616  0.0201677   2.472 0.013425 *  
+claims_log                   0.3576629  0.0125884  28.412  < 2e-16 ***
+individual_inventors_log     0.0717357  0.0117367   6.112 9.88e-10 ***
+patent_citations_log         0.2569311  0.0064915  39.580  < 2e-16 ***
+research_citations_log       0.1225994  0.0087694  13.980  < 2e-16 ***
+other_citations_log          0.1112806  0.0076362  14.573  < 2e-16 ***
+tct_type5-10:grantyear2011   0.0704049  0.0655964   1.073 0.283138    
+tct_type10-15:grantyear2011  0.0370708  0.0833327   0.445 0.656428    
+tct_type>15:grantyear2011    0.0547833  0.1223935   0.448 0.654444    
+tct_type5-10:grantyear2012  -0.0192977  0.0640014  -0.302 0.763019    
+tct_type10-15:grantyear2012 -0.0298032  0.0816368  -0.365 0.715059    
+tct_type>15:grantyear2012   -0.1371802  0.1152275  -1.191 0.233847    
+tct_type5-10:grantyear2013   0.0003489  0.0651290   0.005 0.995726    
+tct_type10-15:grantyear2013  0.0326611  0.0814957   0.401 0.688590    
+tct_type>15:grantyear2013   -0.1195917  0.1114313  -1.073 0.283170    
+tct_type5-10:grantyear2014   0.0534497  0.0661130   0.808 0.418828    
+tct_type10-15:grantyear2014 -0.0323218  0.0809870  -0.399 0.689821    
+tct_type>15:grantyear2014   -0.1081045  0.1108190  -0.976 0.329313    
+tct_type5-10:grantyear2015   0.0142781  0.0679199   0.210 0.833496    
+tct_type10-15:grantyear2015  0.0034028  0.0818883   0.042 0.966854    
+tct_type>15:grantyear2015    0.0515996  0.1092534   0.472 0.636719    
+tct_type5-10:grantyear2016   0.0223461  0.0658829   0.339 0.734476    
+tct_type10-15:grantyear2016 -0.0819641  0.0806060  -1.017 0.309229    
+tct_type>15:grantyear2016   -0.0079935  0.1065045  -0.075 0.940173    
+tct_type5-10:grantyear2017  -0.0238612  0.0681277  -0.350 0.726157    
+tct_type10-15:grantyear2017 -0.0363000  0.0839506  -0.432 0.665454    
+tct_type>15:grantyear2017   -0.0406943  0.1072216  -0.380 0.704292    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Sigma link function:  log
+Sigma Coefficients:
+                              Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)                  1.167e+00  1.773e-02  6.585e+01  < 2e-16 ***
+subclass_H01B1              -1.692e-01  2.605e-01 -6.500e-01  0.51596    
+subclass_H01C1              -3.998e-01  5.620e-01 -7.110e-01  0.47686    
+subclass_H01F1              -4.523e-01  1.065e-05 -4.247e+04  < 2e-16 ***
+subclass_H01G1              -4.881e-01  1.331e-05 -3.667e+04  < 2e-16 ***
+subclass_H01H1              -3.331e-01  1.094e-05 -3.044e+04  < 2e-16 ***
+subclass_H01J1               5.980e-01  1.100e-05  5.437e+04  < 2e-16 ***
+subclass_H01K1               1.421e+01  3.230e-02  4.398e+02  < 2e-16 ***
+subclass_H01L1               7.561e-02  2.163e-06  3.496e+04  < 2e-16 ***
+subclass_H01M1               2.497e-01  1.358e-05  1.839e+04  < 2e-16 ***
+subclass_H01P1               5.010e-01  2.245e-05  2.231e+04  < 2e-16 ***
+subclass_H01Q1               3.903e-02  1.185e-01  3.290e-01  0.74178    
+subclass_H01R1              -2.219e-01  9.690e-02 -2.290e+00  0.02203 *  
+subclass_H01S1               3.020e-01  2.244e-01  1.346e+00  0.17829    
+subclass_H01T1              -4.802e-01  9.244e-01 -5.200e-01  0.60340    
+subclass_H02B1               2.373e-02  1.652e+00  1.400e-02  0.98854    
+subclass_H02G1              -1.313e+00  2.111e-01 -6.220e+00 5.01e-10 ***
+subclass_H02H1               3.499e-01  3.387e-01  1.033e+00  0.30156    
+subclass_H02J1               6.977e-01  1.016e-05  6.865e+04  < 2e-16 ***
+subclass_H02K1              -7.979e-01  6.903e-06 -1.156e+05  < 2e-16 ***
+subclass_H02M1              -3.920e-01  1.143e-05 -3.429e+04  < 2e-16 ***
+subclass_H02N1               2.680e+01  1.773e-02  1.512e+03  < 2e-16 ***
+subclass_H02P1              -9.504e-01  1.853e-05 -5.129e+04  < 2e-16 ***
+subclass_H02S1              -2.649e-01  8.016e-06 -3.305e+04  < 2e-16 ***
+subclass_H03B1               2.511e+00  2.232e+00  1.125e+00  0.26066    
+subclass_H03C1               3.138e-01  8.987e-01  3.490e-01  0.72695    
+subclass_H03D1               2.785e-01  9.886e-01  2.820e-01  0.77813    
+subclass_H03F1              -2.789e-01  1.506e-01 -1.852e+00  0.06405 .  
+subclass_H03G1               4.707e-01  2.590e-01  1.817e+00  0.06920 .  
+subclass_H03H1              -1.024e-01  8.157e-06 -1.256e+04  < 2e-16 ***
+subclass_H03J1               1.108e+00  9.409e-01  1.178e+00  0.23883    
+subclass_H03K1              -6.523e-01  1.978e-05 -3.298e+04  < 2e-16 ***
+subclass_H03L1              -6.268e-01  2.993e-01 -2.095e+00  0.03621 *  
+subclass_H03M1               6.682e-01  1.407e-01  4.749e+00 2.05e-06 ***
+subclass_H04B1              -4.391e-02  6.578e-02 -6.680e-01  0.50445    
+subclass_H04H1              -2.610e-02  1.878e-01 -1.390e-01  0.88946    
+subclass_H04J1               4.204e-01  1.851e-01  2.271e+00  0.02313 *  
+subclass_H04K1               4.795e+00  1.900e+00  2.523e+00  0.01163 *  
+subclass_H04L1               1.326e-01  2.351e-05  5.640e+03  < 2e-16 ***
+subclass_H04M1               2.061e-01  6.386e-02  3.227e+00  0.00125 ** 
+subclass_H04N1               3.111e-01  5.019e-06  6.199e+04  < 2e-16 ***
+subclass_H04Q1               5.654e-01  1.873e-01  3.019e+00  0.00254 ** 
+subclass_H04R1              -4.266e-01  8.766e-06 -4.866e+04  < 2e-16 ***
+subclass_H04S1               9.328e-01  2.359e-01  3.954e+00 7.69e-05 ***
+subclass_H04W1               1.573e-01  2.576e-05  6.107e+03  < 2e-16 ***
+subclass_H05B1               1.404e-01  2.283e-05  6.150e+03  < 2e-16 ***
+subclass_H05F1              -2.157e+00  2.023e+00 -1.067e+00  0.28616    
+subclass_H05G1               3.461e+00  2.349e+00  1.473e+00  0.14065    
+subclass_H05H1              -3.028e-01  2.594e-01 -1.167e+00  0.24310    
+subclass_H05K1              -3.147e-01  1.307e-05 -2.408e+04  < 2e-16 ***
+tct_type5-10                 3.472e-01  2.253e-05  1.541e+04  < 2e-16 ***
+tct_type10-15                6.029e-01  2.199e-05  2.741e+04  < 2e-16 ***
+tct_type>15                  9.523e-01  2.356e-05  4.043e+04  < 2e-16 ***
+grantyear2011                1.142e-01  2.341e-05  4.879e+03  < 2e-16 ***
+grantyear2012                2.807e-01  2.543e-05  1.104e+04  < 2e-16 ***
+grantyear2013                4.231e-01  2.295e-05  1.844e+04  < 2e-16 ***
+grantyear2014                7.991e-01  2.157e-05  3.704e+04  < 2e-16 ***
+grantyear2015                8.278e-01  2.143e-05  3.862e+04  < 2e-16 ***
+grantyear2016                7.929e-01  2.150e-05  3.688e+04  < 2e-16 ***
+grantyear2017                7.053e-01  2.174e-05  3.244e+04  < 2e-16 ***
+organizational1             -2.984e-02  2.969e-06 -1.005e+04  < 2e-16 ***
+claims_log                  -1.051e-01  1.840e-06 -5.715e+04  < 2e-16 ***
+individual_inventors_log    -7.386e-03  1.736e-06 -4.254e+03  < 2e-16 ***
+patent_citations_log        -7.093e-02  1.214e-06 -5.841e+04  < 2e-16 ***
+research_citations_log       3.151e-02  1.326e-06  2.376e+04  < 2e-16 ***
+other_citations_log         -6.697e-02  1.547e-06 -4.330e+04  < 2e-16 ***
+tct_type5-10:grantyear2011   2.884e-01  2.603e-05  1.108e+04  < 2e-16 ***
+tct_type10-15:grantyear2011  1.411e-01  2.556e-05  5.519e+03  < 2e-16 ***
+tct_type>15:grantyear2011    4.085e-01  2.691e-05  1.518e+04  < 2e-16 ***
+tct_type5-10:grantyear2012  -9.967e-03  2.814e-05 -3.542e+02  < 2e-16 ***
+tct_type10-15:grantyear2012 -1.201e-01  2.768e-05 -4.338e+03  < 2e-16 ***
+tct_type>15:grantyear2012   -4.206e-01  3.238e-05 -1.299e+04  < 2e-16 ***
+tct_type5-10:grantyear2013  -3.543e-02  2.628e-05 -1.348e+03  < 2e-16 ***
+tct_type10-15:grantyear2013  3.585e-01  2.492e-05  1.439e+04  < 2e-16 ***
+tct_type>15:grantyear2013   -2.548e-01  2.731e-05 -9.330e+03  < 2e-16 ***
+tct_type5-10:grantyear2014   5.539e-02  2.404e-05  2.304e+03  < 2e-16 ***
+tct_type10-15:grantyear2014  5.032e-04  2.419e-05  2.080e+01  < 2e-16 ***
+tct_type>15:grantyear2014   -4.672e-01  2.530e-05 -1.847e+04  < 2e-16 ***
+tct_type5-10:grantyear2015   1.140e-01  2.405e-05  4.741e+03  < 2e-16 ***
+tct_type10-15:grantyear2015  4.479e-02  2.353e-05  1.903e+03  < 2e-16 ***
+tct_type>15:grantyear2015   -5.471e-01  2.511e-05 -2.179e+04  < 2e-16 ***
+tct_type5-10:grantyear2016   1.170e-01  2.388e-05  4.897e+03  < 2e-16 ***
+tct_type10-15:grantyear2016  1.198e-03  2.363e-05  5.068e+01  < 2e-16 ***
+tct_type>15:grantyear2016   -9.332e-02  2.512e-05 -3.715e+03  < 2e-16 ***
+tct_type5-10:grantyear2017  -1.460e-01  2.463e-05 -5.930e+03  < 2e-16 ***
+tct_type10-15:grantyear2017  3.275e-01  2.353e-05  1.392e+04  < 2e-16 ***
+tct_type>15:grantyear2017   -1.483e-01  2.546e-05 -5.824e+03  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+Nu link function:  identity 
+Nu Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  -1.204770   0.165503  -7.279 3.39e-13 ***
+subclass_H01B1               -0.103515   0.198831  -0.521 0.602635    
+subclass_H01C1               -0.043116   0.608842  -0.071 0.943544    
+subclass_H01F1                0.215999   0.155496   1.389 0.164808    
+subclass_H01G1                0.608728   0.220620   2.759 0.005796 ** 
+subclass_H01H1                0.292769   0.173336   1.689 0.091219 .  
+subclass_H01J1               -0.066582   0.060516  -1.100 0.271235    
+subclass_H01K1                1.059621   0.109975   9.635  < 2e-16 ***
+subclass_H01L1               -0.054538   0.036050  -1.513 0.130332    
+subclass_H01M1               -0.021880   0.073560  -0.297 0.766131    
+subclass_H01P1                0.191541   0.142323   1.346 0.178363    
+subclass_H01Q1               -0.005186   0.092263  -0.056 0.955172    
+subclass_H01R1               -0.380371   0.074627  -5.097 3.46e-07 ***
+subclass_H01S1               -0.169835   0.118187  -1.437 0.150720    
+subclass_H01T1                1.535182   0.403878   3.801 0.000144 ***
+subclass_H02B1                2.181679   0.410279   5.318 1.05e-07 ***
+subclass_H02G1                0.137900   0.530793   0.260 0.795019    
+subclass_H02H1               -0.046569   0.143766  -0.324 0.746000    
+subclass_H02J1               -0.203914   0.053400  -3.819 0.000134 ***
+subclass_H02K1               -0.060684   0.220697  -0.275 0.783343    
+subclass_H02M1               -0.188760   0.094678  -1.994 0.046187 *  
+subclass_H02N1               -0.929506   0.155738  -5.968 2.41e-09 ***
+subclass_H02P1                0.758168   0.238522   3.179 0.001480 ** 
+subclass_H02S1                1.093286   0.166193   6.578 4.79e-11 ***
+subclass_H03B1               -1.493579   0.265387  -5.628 1.83e-08 ***
+subclass_H03C1                1.280171   0.363497   3.522 0.000429 ***
+subclass_H03D1                1.482811   0.252376   5.875 4.24e-09 ***
+subclass_H03F1                0.084307   0.136006   0.620 0.535343    
+subclass_H03G1               -0.020574   0.132905  -0.155 0.876979    
+subclass_H03H1                0.072033   0.134011   0.538 0.590911    
+subclass_H03J1                1.172079   0.186833   6.273 3.55e-10 ***
+subclass_H03K1               -0.036522   0.142808  -0.256 0.798151    
+subclass_H03L1               -0.473352   0.228122  -2.075 0.037990 *  
+subclass_H03M1               -0.151336   0.055559  -2.724 0.006454 ** 
+subclass_H04B1               -0.077443   0.043549  -1.778 0.075359 .  
+subclass_H04H1                0.791628   0.110979   7.133 9.90e-13 ***
+subclass_H04J1               -0.273330   0.070011  -3.904 9.47e-05 ***
+subclass_H04K1               -0.756583   0.092314  -8.196 2.53e-16 ***
+subclass_H04L1                0.100509   0.030476   3.298 0.000974 ***
+subclass_H04M1                0.062488   0.046301   1.350 0.177145    
+subclass_H04N1               -0.102221   0.034045  -3.003 0.002679 ** 
+subclass_H04Q1               -0.081669   0.083368  -0.980 0.327276    
+subclass_H04R1               -0.158738   0.098250  -1.616 0.106174    
+subclass_H04S1                0.106161   0.120944   0.878 0.380073    
+subclass_H04W1               -0.008263   0.034250  -0.241 0.809365    
+subclass_H05B1                0.278705   0.077799   3.582 0.000341 ***
+subclass_H05F1              -12.155395  10.258017  -1.185 0.236035    
+subclass_H05G1               -0.574799   0.143942  -3.993 6.52e-05 ***
+subclass_H05H1                0.532853   0.213232   2.499 0.012459 *  
+subclass_H05K1                0.359689   0.075996   4.733 2.22e-06 ***
+tct_type5-10                  0.057665   0.163871   0.352 0.724921    
+tct_type10-15                -0.109122   0.183492  -0.595 0.552049    
+tct_type>15                  -0.421970   0.216134  -1.952 0.050900 .  
+grantyear2011                 0.023548   0.193215   0.122 0.903000    
+grantyear2012                -0.038231   0.175167  -0.218 0.827232    
+grantyear2013                 0.046869   0.171356   0.274 0.784455    
+grantyear2014                 0.055778   0.160125   0.348 0.727588    
+grantyear2015                 0.336014   0.164487   2.043 0.041077 *  
+grantyear2016                 0.140853   0.157476   0.894 0.371087    
+grantyear2017                -0.010485   0.169574  -0.062 0.950697    
+organizational1              -0.008817   0.034766  -0.254 0.799786    
+claims_log                    0.007314   0.021734   0.337 0.736463    
+individual_inventors_log      0.006342   0.019182   0.331 0.740937    
+patent_citations_log          0.125325   0.010530  11.902  < 2e-16 ***
+research_citations_log        0.001357   0.013377   0.101 0.919168    
+other_citations_log           0.065286   0.012305   5.305 1.13e-07 ***
+tct_type5-10:grantyear2011   -0.210827   0.211807  -0.995 0.319557    
+tct_type10-15:grantyear2011  -0.131058   0.233341  -0.562 0.574350    
+tct_type>15:grantyear2011     0.072728   0.273090   0.266 0.789997    
+tct_type5-10:grantyear2012   -0.154855   0.196959  -0.786 0.431736    
+tct_type10-15:grantyear2012   0.099397   0.219497   0.453 0.650666    
+tct_type>15:grantyear2012     0.338997   0.275968   1.228 0.219304    
+tct_type5-10:grantyear2013   -0.112424   0.193010  -0.582 0.560245    
+tct_type10-15:grantyear2013  -0.085161   0.209541  -0.406 0.684437    
+tct_type>15:grantyear2013     0.058071   0.260267   0.223 0.823442    
+tct_type5-10:grantyear2014   -0.076955   0.179809  -0.428 0.668667    
+tct_type10-15:grantyear2014  -0.042326   0.199912  -0.212 0.832323    
+tct_type>15:grantyear2014     0.215000   0.240135   0.895 0.370614    
+tct_type5-10:grantyear2015   -0.417133   0.184214  -2.264 0.023552 *  
+tct_type10-15:grantyear2015  -0.386008   0.203449  -1.897 0.057789 .  
+tct_type>15:grantyear2015     0.044734   0.244007   0.183 0.854540    
+tct_type5-10:grantyear2016   -0.180950   0.177224  -1.021 0.307246    
+tct_type10-15:grantyear2016  -0.269289   0.198692  -1.355 0.175323    
+tct_type>15:grantyear2016     0.217317   0.231521   0.939 0.347915    
+tct_type5-10:grantyear2017   -0.127244   0.194371  -0.655 0.512699    
+tct_type10-15:grantyear2017  -0.240467   0.209767  -1.146 0.251654    
+tct_type>15:grantyear2017     0.193554   0.244654   0.791 0.428870    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------
+No. of observations in the fit:  75000 
+Degrees of Freedom for the fit:  262
+      Residual Deg. of Freedom:  74738 
+                      at cycle:  10 
+ 
+Global Deviance:     221649.7 
+            AIC:     222173.7 
+            SBC:     224590.7 
+******************************************************************
+DONE summary electricity 
