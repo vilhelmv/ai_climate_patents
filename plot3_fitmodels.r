@@ -1,5 +1,4 @@
 # The code below will fit several regression models (specified below) and output model summaries to a file
-# Recommended to run the model fits in parallel: with 10 cores please allocate >192GB RAM
 
 library(vcd)
 library(MASS)
@@ -14,6 +13,7 @@ library(tidyr)
 library(stringr)
 options(max.print=2000)
 
+n.cpu.cores <- 12
 data.dir <- "data/regression/"
 
 dict_ycode_subclasses <- new.env(hash = TRUE, parent = emptyenv(), size = NA)
@@ -27,7 +27,7 @@ dict_ycode_subclasses[["Y02T"]] <- "Transport"
 dict_ycode_subclasses[["Y02W"]] <- "Waste handling"
 
 regress_class <- function (classcode, ncyc, thresholdnz, subset_sample_size) {
-  fname <- paste(datadir,classcode,'.csv',sep='')
+  fname <- paste(data.dir,classcode,'.csv',sep='')
   df_raw <- read.csv(fname)
   df_raw$organizational <- as.integer(df_raw$n_inventors_org>0)
   cat(classcode, ": before removing NAs",dim(df_raw),"\n")
@@ -69,9 +69,6 @@ regress_class <- function (classcode, ncyc, thresholdnz, subset_sample_size) {
       ai_citations_log = n_backward_npl_ai_citations_log1p,
       cs_citations_log = n_backward_npl_cs_citations_log1p
     )
-  udf$aigreen <- paste(as.character(udf$ai),"&",as.character(udf$green_ycodes))
-  aigreen_columns_order <- c("non-ai & non-green","non-ai & green","ai & non-green","ai & green")
-  udf$aigreen <- factor(udf$aigreen,levels=aigreen_columns_order)
 
   # Controls for the different subclasses
   features.technologies <- character()
@@ -117,8 +114,8 @@ regress_class <- function (classcode, ncyc, thresholdnz, subset_sample_size) {
   tmpsnznamesycode <- tmpsnznames
   tmpexpr <- paste(sort(tmpsnznamesycode),collapse='+')
 
-  # make sure a sufficient share of AI patents are included (against unbalanced data)
-  size_limit_ai <- min(subset_sample_size/4,20000) 
+  # make sure a sufficient share of AI patents are included (against unbalanced data if/when subsampling)
+  size_limit_ai <- subset_sample_size/4
   subclass_ai_patents <- subclass[subclass$ai=="ai",]
   if (dim(subclass_ai_patents)[1]>size_limit_ai) {
     subclass_ai_patents_target <- sample_n(subclass_ai_patents,size_limit_ai)
@@ -178,7 +175,7 @@ target.classes <- target.classes.mainpaper
 fname_output <- "output/plot3_fitmodels_output.txt"
 sink(fname_output)
 library(doParallel)
-registerDoParallel(cores=12)
+registerDoParallel(cores=n.cpu.cores)
 fitted.models.ycodes.class <- 
   foreach (i=1:length(target.classes)) %dopar% {
     classcode <- target.classes[[i]]
